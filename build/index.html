@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BTC Markets</title>
+	<style>
+		nav .nav,nav .nav .nav__items,nav .nav .nav__items .nav__menu{display:-webkit-box;display:-ms-flexbox}footer .footer .footer__item ul li,nav .nav .nav__items .nav__menu li{list-style-type:none}*,legend{-webkit-box-sizing:border-box}abbr[title],footer .footer .footer__item ul li a:hover,main .latest__news__section .check__out__link:hover{text-decoration:underline}button,hr,input{overflow:visible}progress,sub,sup{vertical-align:baseline}@font-face{font-family:regular;src:url("../fonts/regular.ttf")}body{font-family:regular,sans-serif;margin:0}body::-webkit-scrollbar{width:8px}body::-webkit-scrollbar-track{background:#f1f1f1}body::-webkit-scrollbar-thumb{background:#888}body::-webkit-scrollbar-thumb:hover{background:#555}.container{max-width:1200px;padding:0 32px;margin:0 auto}nav .nav{display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:80px}details,main,nav .nav .logo .full__logo{display:block}[hidden],nav .nav .logo .mobile__logo,template{display:none}nav .nav .nav__items{display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:32px}nav .nav .nav__items .mobile__menu__btn{display:none;cursor:pointer}nav .nav .nav__items .nav__menu{display:flex;gap:32px}nav .nav .nav__items .nav__menu li a{position:relative;color:#18181b;text-decoration:none;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}nav .nav .nav__items .nav__menu li a::before{content:"";width:0%;height:3px;background:#4cfdc7;position:absolute;bottom:-10px;border-radius:4px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}nav .nav .nav__items .nav__menu li a:hover{color:#4cfdc7}nav .nav .nav__items .nav__menu li a:hover::before{width:100%}nav .nav .nav__items .nav__btns{display:-webkit-box;display:-ms-flexbox;display:flex;gap:8px}nav .nav .nav__items .nav__btns button{border-radius:4px;padding:9px 17px;cursor:pointer;color:#18181b;font-size:12px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}nav .nav .nav__items .nav__btns button#login{border:1px solid #18181b;background:0 0}nav .nav .nav__items .nav__btns button#login:hover{background:#01271c;border-color:#01271c;color:#fff}header .header .header__left .header__left__btns a:first-child:hover,nav .nav .nav__items .nav__btns button#signup:hover{border-color:#10b981;color:#fff;background:#10b981}nav .nav .nav__items .nav__btns button#signup{border:1px solid #4cfdc7;background:#4cfdc7;color:#01271c}@media screen and (max-width:890px){nav .nav .logo svg{width:152px;height:16px}nav .nav .nav__items,nav .nav .nav__items .nav__menu{gap:16px}}header .header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:128px;gap:64px}@media screen and (max-width:1024px){header .header{padding-top:64px}}header .header .header__left{max-width:659px}header .header .header__left h1{font-size:min(71px, max(40px + 2vw));font-weight:400;color:#000;margin:0}header .header .header__left p{font-size:20px;color:#27272a;line-height:30px;letter-spacing:.1px;margin:34px 0;max-width:461px}header .header .header__left .header__left__btns{display:-webkit-box;display:-ms-flexbox;display:flex;gap:16px;margin-bottom:16px}header .header .header__left .header__left__btns a{display:block;padding:9px 33px;border-radius:4px;text-decoration:none}header .header .header__left .header__left__btns a:first-child{background:#4cfdc7;color:#01271c}header .header .header__left .header__left__btns a:nth-child(2){background:0 0;color:#18181b;border:1px solid #18181b}header .header .header__left .header__left__btns a:nth-child(2):hover{background:#01271c;border-color:#01271c;color:#fff}header .header .header__left .header__left__stars{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px;color:#27272a;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}@media screen and (max-width:800px){header .header{gap:32px}}@media screen and (max-width:768px){nav .nav .logo svg{width:unset;height:unset}nav .nav .logo .full__logo,nav .nav .nav__items .nav__menu{display:none}nav .nav .logo .mobile__logo{display:block;width:100%}nav .nav .nav__items .mobile__menu__btn{display:block}header .header{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;padding-top:65px;gap:64px}header .header .header__left .header__left__btns,header .header .header__left .header__left__stars{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}@media screen and (max-width:480px){header .header{padding-top:32.5px}header .header .header__left .header__left__btns{-ms-flex-wrap:wrap;flex-wrap:wrap}header .header .header__left .header__left__btns a,header .header .header__right .header__right__img img{width:100%}}main .markets__section{margin-bottom:128px}main .markets__section .markets{-webkit-box-shadow:0 0 16px rgba(9,24,26,.04);box-shadow:0 0 16px rgba(9,24,26,.04);border-radius:4px;padding:32px;margin-top:32px}main .markets__section .markets .markets__nav{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:32px}main .markets__section .markets .markets__nav h4{font-weight:400;color:#71717a;cursor:pointer}main .markets__section .markets .markets__nav h4.active{color:#18181b}main .markets__section .markets .markets__table{overflow-y:hidden;overflow-x:auto}main .markets__section .markets .markets__table::-webkit-scrollbar{height:8px}main .markets__section .markets .markets__table::-webkit-scrollbar-track{background:#f1f1f1}main .markets__section .markets .markets__table::-webkit-scrollbar-thumb{background:#888}main .markets__section .markets .markets__table::-webkit-scrollbar-thumb:hover{background:#555}main .markets__section .markets .markets__table table{border-collapse:collapse;width:100%}main .markets__section .markets .markets__table table tbody tr{border-bottom:1px solid #f4f4f5}main .markets__section .markets .markets__table table tbody tr th{padding:16px 0;text-align:left;color:#18181b;font-weight:400;border-top:1px solid #f4f4f5}main .markets__section .markets .markets__table table tbody tr td{padding:16px 0;color:#18181b;font-weight:400}main .markets__section .markets .markets__table table tbody tr td span.aud{color:#a1a1aa;font-size:14px}main .markets__section .markets .markets__table table tbody tr td span.up{color:#10b981}main .markets__section .markets .markets__table table tbody tr td span.down{color:#f43f5e}main .markets__section .markets .markets__table table tbody tr td:first-child,main .markets__section .markets .markets__table table tbody tr td:nth-child(3){display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:16px}main .markets__section .markets .markets__table table tbody tr td a{display:block;width:54px;text-decoration:none;padding:16px 0;background:#4cfdc7;border-radius:4px;color:#01271c;cursor:pointer;text-align:center;font-size:12px;margin:0 0 0 auto;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .markets__section .markets .markets__table table tbody tr td a:hover{background:#10b981;border-color:#10b981;color:#fff}main .markets__section .markets .markets__view__all{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:16px;margin-top:22px}main .markets__section .markets .markets__view__all a{color:#18181b;text-decoration:none}@media screen and (max-width:460px){main .markets__section .markets .markets__nav{-ms-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:16px;gap:16px}main .markets__section .markets .markets__nav h4{margin:0;width:100%;text-align:center}main .markets__section .markets .markets__view__all{-ms-flex-wrap:wrap;flex-wrap:wrap}main .markets__section .markets .markets__view__all svg:first-child{width:100%}}main .markets__section .why__btc__markets{margin-top:64px}main .markets__section .why__btc__markets h2{text-align:center;font-size:min(40px, max(20px + 2vw));font-weight:400;margin:0}main .markets__section .why__btc__markets .wbm__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:64px;margin-top:128px}main .markets__section .why__btc__markets .wbm__items .wbm__item{text-align:center;max-width:250px}main .markets__section .why__btc__markets .wbm__items .wbm__item .wbm__icon{margin-bottom:32px}main .markets__section .why__btc__markets .wbm__items .wbm__item h4{margin:0;color:#18181b;font-weight:400;font-size:20px}main .markets__section .why__btc__markets .wbm__items .wbm__item p{color:#27272a;line-height:24px;letter-spacing:.2px}main .template__section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:32px;margin-bottom:128px}main .template__section:nth-child(odd) .template__section__content{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}main .template__section:nth-child(odd) .template__section__cover{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}main .template__section .template__section__content,main .template__section .template__section__cover{-webkit-box-flex:1;-ms-flex:1 1 550px;flex:1 1 550px}main .template__section .template__section__content h4{font-weight:400;color:#18181b;font-size:16px;text-transform:uppercase}main .template__section .template__section__content h2{font-size:min(40px, max(20px + 2vw));color:#18181b;font-weight:400}main .template__section .template__section__content .template__section__content__items{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:64px;gap:32px}main .template__section .template__section__content .template__section__content__items .template__section__content__item{-webkit-box-flex:1;-ms-flex:1 1 33.3333333333%;flex:1 1 33.3333333333%}main .template__section .template__section__content .template__section__content__items .template__section__content__item h6{font-size:16px;color:#18181b;font-weight:400;margin:8px 0 16px}main .template__section .template__section__content .template__section__content__items .template__section__content__item p{color:#27272a;font-size:15px;line-height:24px}main .template__section .template__section__cover img{display:block;width:100%}main .vip__program__section{background:#fafafa;padding-top:128px}main .vip__program__section .container .vip__program__section__content{max-width:710px;margin:0 auto;text-align:center;color:#18181b}main .vip__program__section .container .vip__program__section__content h4{font-size:16px;font-weight:400;margin:0}main .vip__program__section .container .vip__program__section__content h2{font-weight:400;font-size:min(40px, max(20px + 2vw));letter-spacing:.1px;margin:16px 0 32px}main .vip__program__section .container .vip__program__section__content p{color:#27272a;line-height:24px;letter-spacing:.2px;margin-bottom:48px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:64px;margin-bottom:64px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items .vip__program__section__item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items .vip__program__section__item h6{font-size:16px;font-weight:400;margin:0}main .vip__program__section .container .vip__program__section__content a{display:block;text-decoration:none;padding:9px 33px;color:#18181b;border:1px solid #18181b;border-radius:4px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:0 auto 64px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .vip__program__section .container .vip__program__section__content a:hover{background:#01271c;border-color:#01271c;color:#fff}main .vip__program__section .container .vip__program__section__cover img{display:block;width:100%}main .latest__news__section,main .tree__easy__steps__section{padding-top:128px;padding-bottom:128px}legend,ul{padding:0}main .tree__easy__steps__section .tree__easy__steps{max-width:900px;margin:0 auto}main .tree__easy__steps__section .tree__easy__steps h2{font-weight:400;font-size:min(40px, max(20px + 2vw));letter-spacing:.1px;margin:16px 0 64px;text-align:center}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:64px;margin-bottom:64px}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item{text-align:center;width:278px}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item .icon{padding:16px;background:#fcfbf8;width:72px;height:72px;border-radius:4px;margin:0 auto}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item h6{font-size:20px;color:#18181b;font-weight:400;margin:16px 0}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item p{color:#27272a;line-height:24px;letter-spacing:.2px;font-size:15px}main .before__footer a,main .tree__easy__steps__section .tree__easy__steps a{display:block;text-decoration:none;padding:9px 33px;background:#4cfdc7;color:#01271c;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;border-radius:4px;margin:0 auto 32px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .tree__easy__steps__section .tree__easy__steps a:hover{background:#10b981;border-color:#10b981;color:#fff}main .latest__news__section .latest__news__items .latest__news__item:hover .read__more,main .latest__news__section .social a:hover{color:#10b981}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__stars{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#27272a}main .trade__on__the__go h2{font-weight:400;font-size:min(40px, max(20px + 2vw));letter-spacing:.1px;margin:0 0 32px;text-align:center}main .trade__on__the__go p{color:#27272a;line-height:24px;letter-spacing:.2px;font-size:15px;text-align:center;max-width:900px;margin:0 auto 32px}main .before__footer h2,main .latest__news__section h2{font-size:min(40px, max(20px + 2vw));font-weight:400;text-align:center}main .trade__on__the__go .totg__store{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;gap:32px}@media screen and (max-width:580px){main .template__section .template__section__content h2{text-align:center}main .template__section .template__section__content .template__section__content__items .template__section__content__item{-webkit-box-flex:1;-ms-flex:1 1 100%;flex:1 1 100%;text-align:center}main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items,main .vip__program__section .container .vip__program__section__content .vip__program__section__items{gap:32px}main .trade__on__the__go .totg__store{-ms-flex-wrap:wrap;flex-wrap:wrap}}main .trade__on__the__go .totg__store .app__store img,main .trade__on__the__go .totg__store .google__play img{display:block;width:150px;height:40px}main .trade__on__the__go .totg__store .app__store .app__store__stars,main .trade__on__the__go .totg__store .app__store .google__play__stars,main .trade__on__the__go .totg__store .google__play .app__store__stars,main .trade__on__the__go .totg__store .google__play .google__play__stars{display:-webkit-box;display:-ms-flexbox;display:flex;gap:8px;margin-top:16px}main .trade__on__the__go .totg__store .app__store .app__store__stars img,main .trade__on__the__go .totg__store .app__store .google__play__stars img,main .trade__on__the__go .totg__store .google__play .app__store__stars img,main .trade__on__the__go .totg__store .google__play .google__play__stars img{width:unset;height:unset}main .trade__on__the__go a{display:block;text-decoration:none;padding:9px 36px;color:#18181b;border:1px solid #18181b;border-radius:4px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:32px auto 0;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .trade__on__the__go a:hover{background:#01271c;border-color:#01271c;color:#fff}main .latest__news__section h2{letter-spacing:.1px;margin:0 0 32px}main .latest__news__section .latest__news__items{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;gap:32px;margin-bottom:64px}main .latest__news__section .latest__news__items .latest__news__item{-webkit-box-shadow:0 0 32px rgba(9,24,26,.1);box-shadow:0 0 32px rgba(9,24,26,.1);border-radius:8px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover{max-width:357px;max-height:148px;overflow:hidden}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover img{display:block;width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-webkit-transition:-webkit-transform .3s;transition:transform .3s;-o-transition:transform .3s;transition:transform .3s,-webkit-transform .3s}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:16px 0;padding:0 16px}@media screen and (max-width:380px){nav .nav .nav__items .mobile__menu__btn svg{width:30px}nav .nav .nav__items .nav__btns button{padding:6px 12px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items .vip__program__section__item{gap:4px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items .vip__program__section__item h6{font-size:15px}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status{-ms-flex-wrap:wrap;flex-wrap:wrap}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p{width:100%;text-align:center}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child{margin-bottom:8px}}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p{margin:0;color:#18181b}main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child{background:#bdffeb;padding:6px;border-radius:4px;color:#01271c;font-size:18px}main .latest__news__section .latest__news__items .latest__news__item h4{font-size:min(24px, max(12px + 2vw));font-weight:400;margin:0;max-width:350px;padding:0 16px}main .latest__news__section .latest__news__items .latest__news__item h4 a{color:#18181b;text-decoration:none}main .latest__news__section .latest__news__items .latest__news__item .read__more{display:block;margin-top:16px;text-decoration:none;color:#18181b;padding:0 16px 16px;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .latest__news__section .latest__news__items .latest__news__item:hover{-webkit-box-shadow:0 0 32px rgba(9,24,26,.3);box-shadow:0 0 32px rgba(9,24,26,.3)}main .latest__news__section .latest__news__items .latest__news__item:hover .latest__news__item__cover img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}main .latest__news__section .latest__news__items .latest__news__item:hover h4 a{coolor:#01271C}main .latest__news__section .check__out__link{display:block;text-decoration:none;text-align:center;color:#18181b;margin-bottom:64px}main .latest__news__section .social{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:32px}main .latest__news__section .social a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:10px;text-decoration:none;font-size:16px;color:#18181b;-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .latest__news__section .social a svg path{-webkit-transition:.3s;-o-transition:.3s;transition:.3s}main .latest__news__section .social a:hover svg path{fill:#10B981}main .before__footer h2{margin:0 auto 32px;max-width:420px}footer .footer__info p,ul{margin:0}main .before__footer a:hover{background:#10b981;border-color:#10b981;color:#fff}footer{margin-top:128px}footer .footer{display:-webkit-box;display:-ms-flexbox;display:flex;gap:64px}footer .footer .footer__item{-webkit-box-flex:1;-ms-flex:1 1 227px;flex:1 1 227px}footer .footer .footer__item h4{margin-top:0;margin-bottom:32px;color:#18181b;font-weight:400;font-size:16px}footer .footer .footer__item ul li a{display:block;text-decoration:none;color:#3f3f46;margin-bottom:16px}footer .footer .footer__item ul li a svg path{fill:#3F3F46}footer .footer .footer__item ul li img{width:120px;height:40px;display:block;margin-bottom:8px}footer .footer .footer__item:nth-child(4) li a{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:8px}@media screen and (max-width:1024px){main .template__section:nth-child(odd) .template__section__content{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}main .template__section:nth-child(odd) .template__section__cover{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}footer .footer,main .template__section{-ms-flex-wrap:wrap;flex-wrap:wrap}main .template__section .template__section__cover img{max-width:600px;margin:0 auto}main .latest__news__section .latest__news__items{-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}footer .footer__info{text-align:center;font-size:14px;color:#27272a;margin-top:128px;margin-bottom:64px}footer .footer__info .footer__info__top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:32px;margin-bottom:16px}@media screen and (max-width:768px){main .markets__section .markets .markets__table table{width:800px}main .markets__section .why__btc__markets .wbm__items{-ms-flex-wrap:wrap;flex-wrap:wrap;margin-top:64px;gap:32px}main .vip__program__section .container .vip__program__section__content .vip__program__section__items{-ms-flex-wrap:wrap;flex-wrap:wrap}main .tree__easy__steps__section{padding-top:64px;padding-bottom:64px}main .latest__news__section .social,main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items{-ms-flex-wrap:wrap;flex-wrap:wrap}main .template__section{margin-bottom:64px}footer .footer,main .template__section .template__section__content h4{text-align:center}footer .footer .footer__item{-webkit-box-flex:1;-ms-flex:1 1 100%;flex:1 1 100%}footer .footer .footer__item li img{margin:0 auto 8px}footer .footer .footer__item:nth-child(4) li a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}footer .footer__info .footer__info__top{-ms-flex-wrap:wrap;flex-wrap:wrap;gap:16px}footer .footer__info .footer__info__top p{width:100%}}footer .footer__info .footer__info__bottom{font-size:12px}/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */*{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{-webkit-box-sizing:border-box;box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="nav container">
+			<div class="logo">
+				<div class="full__logo">
+					<svg width="182" height="19" viewBox="0 0 182 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_5)">
+							<path
+								d="M46.5187 16.6299H46.3683V18.6719H44.4767V0H46.4435V7.81831H46.5939C46.9921 7.14576 48.4368 5.40246 51.1513 5.40246C54.8105 5.40246 57.4497 8.24086 57.4497 12.2252C57.4497 16.1831 54.8104 18.9971 51.0009 18.9971C48.1868 18.9949 46.8417 17.1034 46.5187 16.6299ZM55.4321 12.223C55.4321 9.28507 53.5893 7.19443 50.9256 7.19443C48.3616 7.19443 46.3683 9.03729 46.3683 12.223C46.3683 14.9375 48.0607 17.2273 50.8748 17.2273C53.5893 17.2273 55.4321 15.2605 55.4321 12.223Z"
+								fill="black" />
+							<path
+								d="M61.1576 14.7648V7.39555H58.7175V5.72747H60.6599C61.0094 5.72747 61.2815 5.50402 61.2815 5.07926V1.96875H63.1244V5.72747H67.1088V7.39555H63.1244V14.7404C63.1244 16.1342 63.6465 16.9572 65.142 16.9572H66.934V18.6761H65.0159C62.6266 18.6739 61.1576 17.3797 61.1576 14.7648Z"
+								fill="black" />
+							<path
+								d="M68.9626 12.1986C68.9626 8.36463 71.7766 5.40234 75.5862 5.40234C78.4003 5.40234 81.013 7.09476 81.7121 9.98404H79.6702C79.1481 8.29162 77.5043 7.19653 75.6371 7.19653C72.874 7.19653 71.0068 9.38671 71.0068 12.2008C71.0068 15.1144 72.9735 17.205 75.688 17.205C77.5552 17.205 79.2233 16.1099 79.7211 14.4175H81.7387C81.0661 17.3046 78.4269 18.9992 75.6128 18.9992C71.7014 18.9948 68.9626 16.0325 68.9626 12.1986Z"
+								fill="black" />
+							<path
+								d="M87.8339 5.72534H89.8007V7.59253H89.9511C90.5728 6.39788 91.8183 5.40234 93.7364 5.40234C95.6788 5.40234 97.0969 6.34921 97.8203 7.7673H97.9951C98.8667 6.09922 100.285 5.40234 102.103 5.40234C104.99 5.40234 106.86 7.44431 106.86 10.2827V18.674H104.893V10.9309C104.893 8.49073 103.674 7.2452 101.756 7.2452C99.9375 7.2452 98.3446 8.5394 98.3446 10.9552V18.674H96.3779V10.5548C96.3779 8.48852 94.9841 7.24299 93.1656 7.24299C91.3471 7.24299 89.8051 8.68763 89.8051 10.8778V18.6718H87.8383V5.72534H87.8339Z"
+								fill="black" />
+							<path
+								d="M109.594 12.2212C109.594 8.23683 112.233 5.39844 115.892 5.39844C118.607 5.39844 120.049 7.14174 120.45 7.81428H120.6V5.72365H122.567V18.6701H120.675V16.6281H120.525C120.202 17.1016 118.857 18.9931 116.043 18.9931C112.233 18.9931 109.594 16.1812 109.594 12.2212ZM120.673 12.2212C120.673 9.03326 118.682 7.19262 116.116 7.19262C113.452 7.19262 111.609 9.28325 111.609 12.2212C111.609 15.2587 113.452 17.2255 116.166 17.2255C118.981 17.2255 120.673 14.9357 120.673 12.2212Z"
+								fill="black" />
+							<path
+								d="M126.16 5.72656H128.102V8.14241H128.253C128.627 7.04731 129.896 5.72656 131.788 5.72656H132.883V7.69331H131.812C129.447 7.69331 128.127 9.53616 128.127 12.0007V18.673H126.16V5.72656Z"
+								fill="black" />
+							<path
+								d="M143.863 18.6719L139.754 12.1987L137.589 14.515V18.6719H135.622V0H137.589V11.827H137.739L143.292 5.72767H145.781L141.075 10.7563L146.104 18.6741H143.863V18.6719Z"
+								fill="black" />
+							<path
+								d="M147.263 12.1986C147.263 8.06597 150.077 5.40234 153.612 5.40234C157.546 5.40234 159.887 8.28941 159.887 12.026V12.8977H149.329C149.429 15.4861 151.097 17.205 153.761 17.205C155.48 17.205 157.121 16.3843 157.719 14.8644H159.76C159.039 17.2802 156.774 18.997 153.736 18.997C149.779 18.9948 147.263 16.0834 147.263 12.1986ZM157.796 11.1521C157.621 8.56374 155.805 7.19432 153.612 7.19432C151.447 7.19432 149.579 8.76284 149.38 11.1521H157.796Z"
+								fill="black" />
+							<path
+								d="M163.654 14.7648V7.39555H161.214V5.72747H163.156C163.506 5.72747 163.778 5.50402 163.778 5.07926V1.96875H165.621V5.72747H169.605V7.39555H165.621V14.7404C165.621 16.1342 166.143 16.9572 167.638 16.9572H169.43V18.6761H167.512C165.123 18.6739 163.654 17.3797 163.654 14.7648Z"
+								fill="black" />
+							<path
+								d="M171.707 14.9131H173.625C173.848 16.4573 174.943 17.278 176.837 17.278C178.779 17.278 179.85 16.3312 179.85 15.0126C179.85 11.3778 172.107 14.141 172.107 9.01284C172.107 6.82265 174.074 5.40234 176.788 5.40234C179.178 5.40234 181.171 6.7961 181.37 9.13672H179.479C179.304 7.91774 178.383 7.09476 176.665 7.09476C175.045 7.09476 174.001 7.89119 174.001 9.01284C174.001 12.3003 181.768 9.56149 181.768 14.9131C181.768 17.3532 179.751 18.997 176.74 18.997C173.676 18.9948 171.932 17.3267 171.707 14.9131Z"
+								fill="black" />
+							<g opacity="0.4">
+								<path opacity="0.4"
+									d="M3.1662 14.144L5.63956 18.2036C5.79 18.4514 5.61301 18.77 5.32099 18.77H0.374261C0.0822361 18.77 -0.0969609 18.4514 0.0556885 18.2036L2.52905 14.144C2.67285 13.9051 3.02018 13.9051 3.1662 14.144Z"
+									fill="#00B287" />
+								<path opacity="0.4"
+									d="M7.73245 7.16357L10.2058 11.2232C10.3563 11.4709 10.1793 11.7895 9.88724 11.7895H4.94051C4.64849 11.7895 4.46929 11.4709 4.62194 11.2232L7.09309 7.16357C7.23911 6.92464 7.58644 6.92464 7.73245 7.16357Z"
+									fill="#00B287" />
+							</g>
+							<path
+								d="M30.5634 14.144L33.0368 18.2036C33.1872 18.4514 33.0102 18.77 32.7182 18.77H27.7737C27.4816 18.77 27.3025 18.4514 27.4551 18.2036L29.9285 14.144C30.0723 13.9051 30.4174 13.9051 30.5634 14.144Z"
+								fill="#00B287" />
+							<path
+								d="M21.4311 14.144L23.9045 18.2036C24.0549 18.4514 23.8779 18.77 23.5859 18.77H18.6392C18.3471 18.77 18.1679 18.4514 18.3206 18.2036L20.7939 14.144C20.9377 13.9051 21.2851 13.9051 21.4311 14.144Z"
+								fill="#00B287" />
+							<path
+								d="M12.2988 14.144L14.7699 18.2036C14.9204 18.4514 14.7434 18.77 14.4513 18.77H9.50683C9.2148 18.77 9.03561 18.4514 9.18826 18.2036L11.6616 14.144C11.8054 13.9051 12.1528 13.9051 12.2988 14.144Z"
+								fill="#00B287" />
+							<path
+								d="M16.8649 7.15967L19.3383 11.2193C19.4887 11.467 19.3117 11.7856 19.0197 11.7856H14.073C13.781 11.7856 13.6018 11.467 13.7544 11.2193L16.2278 7.15967C16.3716 6.92074 16.7189 6.92074 16.8649 7.15967Z"
+								fill="#00B287" />
+							<path
+								d="M21.431 0.179197L23.9044 4.23879C24.0548 4.48657 23.8778 4.80514 23.5858 4.80514H18.6391C18.3471 4.80514 18.1679 4.48657 18.3205 4.23879L20.7939 0.179197C20.9377 -0.0597323 21.285 -0.0597323 21.431 0.179197Z"
+								fill="#00B287" />
+							<path
+								d="M25.9972 7.15967L28.4706 11.2193C28.621 11.467 28.4441 11.7856 28.152 11.7856H23.2075C22.9155 11.7856 22.7363 11.467 22.8889 11.2193L25.3623 7.15967C25.5039 6.92074 25.8512 6.92074 25.9972 7.15967Z"
+								fill="#00B287" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_5">
+								<rect width="182" height="19" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<div class="mobile__logo">
+					<svg width="34" height="19" viewBox="0 0 34 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.4">
+							<path opacity="0.4"
+								d="M3.1662 14.144L5.63956 18.2036C5.79 18.4514 5.61301 18.77 5.32099 18.77H0.374261C0.0822361 18.77 -0.0969609 18.4514 0.0556885 18.2036L2.52905 14.144C2.67285 13.9051 3.02018 13.9051 3.1662 14.144Z"
+								fill="#00B287" />
+							<path opacity="0.4"
+								d="M7.73245 7.16357L10.2058 11.2232C10.3563 11.4709 10.1793 11.7895 9.88724 11.7895H4.94051C4.64849 11.7895 4.46929 11.4709 4.62194 11.2232L7.09309 7.16357C7.23911 6.92464 7.58644 6.92464 7.73245 7.16357Z"
+								fill="#00B287" />
+						</g>
+						<path
+							d="M30.5634 14.144L33.0368 18.2036C33.1872 18.4514 33.0102 18.77 32.7182 18.77H27.7737C27.4816 18.77 27.3025 18.4514 27.4551 18.2036L29.9285 14.144C30.0723 13.9051 30.4174 13.9051 30.5634 14.144Z"
+							fill="#00B287" />
+						<path
+							d="M21.4311 14.144L23.9045 18.2036C24.0549 18.4514 23.8779 18.77 23.5859 18.77H18.6392C18.3471 18.77 18.1679 18.4514 18.3206 18.2036L20.7939 14.144C20.9377 13.9051 21.2851 13.9051 21.4311 14.144Z"
+							fill="#00B287" />
+						<path
+							d="M12.2988 14.144L14.7699 18.2036C14.9204 18.4514 14.7434 18.77 14.4513 18.77H9.50683C9.2148 18.77 9.03561 18.4514 9.18826 18.2036L11.6616 14.144C11.8054 13.9051 12.1528 13.9051 12.2988 14.144Z"
+							fill="#00B287" />
+						<path
+							d="M16.8649 7.15967L19.3383 11.2193C19.4887 11.467 19.3117 11.7856 19.0197 11.7856H14.073C13.781 11.7856 13.6018 11.467 13.7544 11.2193L16.2278 7.15967C16.3716 6.92074 16.7189 6.92074 16.8649 7.15967Z"
+							fill="#00B287" />
+						<path
+							d="M21.431 0.179197L23.9044 4.23879C24.0548 4.48657 23.8778 4.80514 23.5858 4.80514H18.6391C18.3471 4.80514 18.1679 4.48657 18.3205 4.23879L20.7939 0.179197C20.9377 -0.0597323 21.285 -0.0597323 21.431 0.179197Z"
+							fill="#00B287" />
+						<path
+							d="M25.9972 7.15967L28.4706 11.2193C28.621 11.467 28.4441 11.7856 28.152 11.7856H23.2075C22.9155 11.7856 22.7363 11.467 22.8889 11.2193L25.3623 7.15967C25.5039 6.92074 25.8512 6.92074 25.9972 7.15967Z"
+							fill="#00B287" />
+					</svg>
+				</div>
+			</div>
+
+			<div class="nav__items">
+				<div class="mobile__menu__btn">
+					<svg viewBox="0 0 100 40" width="40" height="40">
+						<rect width="100" height="10" rx="4"></rect>
+						<rect width="100" height="10" y="20" rx="4"></rect>
+						<rect width="100" height="10" y="40" rx="4"></rect>
+					</svg>
+				</div>
+
+				<ul class="nav__menu">
+					<li>
+						<a href="#">Products</a>
+					</li>
+					<li>
+						<a href="#">Prices</a>
+					</li>
+					<li>
+						<a href="#">Buy</a>
+					</li>
+					<li>
+						<a href="#">OTC</a>
+					</li>
+					<li>
+						<a href="#">Learn</a>
+					</li>
+					<li>
+						<a href="#">Help</a>
+					</li>
+				</ul>
+
+				<div class="nav__btns">
+					<button id="login">Log in</button>
+					<button id="signup">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<div class="header container">
+			<div class="header__left">
+				<h1>Buy, sell and trade <br> crypto today</h1>
+				<p>Trade with confidence and build your future with Australia’s fastest crypto exchange.</p>
+				<div class="header__left__btns">
+					<a href="#">Get started</a>
+					<a href="#">View exchange</a>
+				</div>
+				<div class="header__left__stars">
+					<div>
+						<img src="img/google-icon.png" alt="google-icon">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/half-star.png" alt="half-star">
+					</div>
+					<div>
+						4.6
+					</div>
+				</div>
+			</div>
+			<div class="header__right">
+				<div class="header__right__img">
+					<img src="img/header-img.jpg" alt="application">
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="markets__section container">
+			<div class="markets">
+				<div class="markets__nav">
+					<h4 class="active">Most Popular</h4>
+					<h4>Top Movers</h4>
+				</div>
+				<div class="markets__table">
+					<table>
+						<tr>
+							<th>Asset</th>
+							<th>Last Price</th>
+							<th>24hr Change</th>
+							<th>Market Cap</th>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="logo">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_70)">
+											<path
+												d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+												fill="#23292F" />
+											<path
+												d="M23.07 8H25.96L19.945 13.957C18.8934 14.9931 17.4763 15.5739 16 15.5739C14.5237 15.5739 13.1066 14.9931 12.055 13.957L6.035 8H8.93L13.5 12.523C14.1655 13.1799 15.0629 13.5482 15.998 13.5482C16.9331 13.5482 17.8305 13.1799 18.496 12.523L23.07 8ZM8.895 24.563H6L12.055 18.57C13.1066 17.5339 14.5237 16.9531 16 16.9531C17.4763 16.9531 18.8934 17.5339 19.945 18.57L26 24.562H23.105L18.5 20C17.8345 19.3431 16.9371 18.9748 16.002 18.9748C15.0669 18.9748 14.1695 19.3431 13.504 20L8.894 24.563H8.895Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_70">
+												<rect width="32" height="32" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<span>XRP</span>
+							</td>
+							<td>
+								<span>$0.5617</span>
+								<span class="aud">AUD</span>
+							</td>
+							<td>
+								<span class="up">1.57%</span>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_74)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M14.7204 14.3486C15.3659 14.3532 15.8949 13.8336 15.9019 13.1882L15.9999 1.17708C16.0034 0.863459 15.8806 0.562103 15.6593 0.340756C15.4379 0.119408 15.1366 -0.00335317 14.8229 6.97059e-05L2.83287 0.0980504C2.18738 0.105095 1.66783 0.634058 1.67242 1.27952C1.677 1.92498 2.20399 2.44252 2.84947 2.43548L11.9815 2.36869L0.343905 14.0064C-0.113402 14.4637 -0.114812 15.2037 0.340755 15.6593C0.796322 16.1148 1.53635 16.1135 1.99366 15.6561L13.6313 4.01844L13.5645 13.1716C13.5574 13.8171 14.075 14.344 14.7204 14.3486Z"
+												fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_74">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</td>
+							<td>
+								<span>$28B</span>
+							</td>
+							<td>
+								<a href="#">Buy</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="logo">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_79)">
+											<path
+												d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+												fill="#F7931A" />
+											<path
+												d="M23.189 14.02C23.503 11.924 21.906 10.797 19.724 10.045L20.432 7.205L18.704 6.775L18.014 9.54C17.56 9.426 17.094 9.32 16.629 9.214L17.324 6.431L15.596 6L14.888 8.839C14.512 8.753 14.142 8.669 13.784 8.579L13.786 8.57L11.402 7.975L10.942 9.821C10.942 9.821 12.225 10.115 12.198 10.133C12.898 10.308 13.024 10.771 13.003 11.139L12.197 14.374C12.245 14.386 12.307 14.404 12.377 14.431L12.194 14.386L11.064 18.918C10.978 19.13 10.761 19.449 10.271 19.328C10.289 19.353 9.015 19.015 9.015 19.015L8.157 20.993L10.407 21.554C10.825 21.659 11.235 21.769 11.638 21.872L10.923 24.744L12.65 25.174L13.358 22.334C13.83 22.461 14.288 22.579 14.736 22.691L14.03 25.519L15.758 25.949L16.473 23.083C19.421 23.641 21.637 23.416 22.57 20.75C23.322 18.604 22.533 17.365 20.982 16.558C22.112 16.298 22.962 15.555 23.189 14.02ZM19.239 19.558C18.706 21.705 15.091 20.544 13.919 20.253L14.869 16.448C16.041 16.741 19.798 17.32 19.239 19.558ZM19.774 13.989C19.287 15.942 16.279 14.949 15.304 14.706L16.164 11.256C17.139 11.499 20.282 11.952 19.774 13.989Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_79">
+												<rect width="32" height="32" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<span>Bitcoin</span>
+							</td>
+							<td>
+								<span>$30.165.43</span>
+								<span class="aud">AUD</span>
+							</td>
+							<td>
+								<span class="down">0.08%</span>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_74)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M14.7204 14.3486C15.3659 14.3532 15.8949 13.8336 15.9019 13.1882L15.9999 1.17708C16.0034 0.863459 15.8806 0.562103 15.6593 0.340756C15.4379 0.119408 15.1366 -0.00335317 14.8229 6.97059e-05L2.83287 0.0980504C2.18738 0.105095 1.66783 0.634058 1.67242 1.27952C1.677 1.92498 2.20399 2.44252 2.84947 2.43548L11.9815 2.36869L0.343905 14.0064C-0.113402 14.4637 -0.114812 15.2037 0.340755 15.6593C0.796322 16.1148 1.53635 16.1135 1.99366 15.6561L13.6313 4.01844L13.5645 13.1716C13.5574 13.8171 14.075 14.344 14.7204 14.3486Z"
+												fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_74">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</td>
+							<td>
+								<span>$582B</span>
+							</td>
+							<td>
+								<a href="#">Buy</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="logo">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_88)">
+											<path
+												d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+												fill="#627EEA" />
+											<path d="M16.498 4V12.87L23.995 16.22L16.498 4Z" fill="white" fill-opacity="0.602" />
+											<path d="M16.498 4L9 16.22L16.498 12.87V4Z" fill="white" />
+											<path d="M16.498 21.968V27.995L24 17.616L16.498 21.968Z" fill="white" fill-opacity="0.602" />
+											<path d="M16.498 27.995V21.967L9 17.616L16.498 27.995Z" fill="white" />
+											<path d="M16.498 20.573L23.995 16.22L16.498 12.872V20.573Z" fill="white" fill-opacity="0.2" />
+											<path d="M9 16.22L16.498 20.573V12.872L9 16.22Z" fill="white" fill-opacity="0.602" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_88">
+												<rect width="32" height="32" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<span>Ethereum</span>
+							</td>
+							<td>
+								<span>$2.215.50</span>
+								<span class="aud">AUD</span>
+							</td>
+							<td>
+								<span class="down">1.08%</span>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_74)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M14.7204 14.3486C15.3659 14.3532 15.8949 13.8336 15.9019 13.1882L15.9999 1.17708C16.0034 0.863459 15.8806 0.562103 15.6593 0.340756C15.4379 0.119408 15.1366 -0.00335317 14.8229 6.97059e-05L2.83287 0.0980504C2.18738 0.105095 1.66783 0.634058 1.67242 1.27952C1.677 1.92498 2.20399 2.44252 2.84947 2.43548L11.9815 2.36869L0.343905 14.0064C-0.113402 14.4637 -0.114812 15.2037 0.340755 15.6593C0.796322 16.1148 1.53635 16.1135 1.99366 15.6561L13.6313 4.01844L13.5645 13.1716C13.5574 13.8171 14.075 14.344 14.7204 14.3486Z"
+												fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_74">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</td>
+							<td>
+								<span>$267B</span>
+							</td>
+							<td>
+								<a href="#">Buy</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="logo">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_103)">
+											<path
+												d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+												fill="#26A17B" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M17.922 17.383V17.381C17.812 17.389 17.245 17.423 15.98 17.423C14.97 17.423 14.259 17.393 14.009 17.381V17.384C10.121 17.213 7.219 16.536 7.219 15.726C7.219 14.917 10.121 14.24 14.009 14.066V16.71C14.263 16.728 14.991 16.771 15.997 16.771C17.204 16.771 17.809 16.721 17.922 16.711V14.068C21.802 14.241 24.697 14.918 24.697 15.726C24.697 16.536 21.802 17.211 17.922 17.383ZM17.922 13.793V11.427H23.336V7.81897H8.595V11.427H14.009V13.792C9.609 13.994 6.3 14.866 6.3 15.91C6.3 16.954 9.609 17.825 14.009 18.028V25.61H17.922V18.026C22.315 17.824 25.616 16.953 25.616 15.91C25.616 14.867 22.315 13.996 17.922 13.793Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_103">
+												<rect width="32" height="32" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<span>Tether</span>
+							</td>
+							<td>
+								<span>$1.45445</span>
+								<span class="aud">AUD</span>
+							</td>
+							<td>
+								<span class="up">2.36%</span>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_74)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M14.7204 14.3486C15.3659 14.3532 15.8949 13.8336 15.9019 13.1882L15.9999 1.17708C16.0034 0.863459 15.8806 0.562103 15.6593 0.340756C15.4379 0.119408 15.1366 -0.00335317 14.8229 6.97059e-05L2.83287 0.0980504C2.18738 0.105095 1.66783 0.634058 1.67242 1.27952C1.677 1.92498 2.20399 2.44252 2.84947 2.43548L11.9815 2.36869L0.343905 14.0064C-0.113402 14.4637 -0.114812 15.2037 0.340755 15.6593C0.796322 16.1148 1.53635 16.1135 1.99366 15.6561L13.6313 4.01844L13.5645 13.1716C13.5574 13.8171 14.075 14.344 14.7204 14.3486Z"
+												fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_74">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</td>
+							<td>
+								<span>$97B</span>
+							</td>
+							<td>
+								<a href="#">Buy</a>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<div class="logo">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_112)">
+											<path
+												d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+												fill="#624DBF" />
+											<path
+												d="M22.313 9C22.807 9.057 23.307 9.088 23.795 9.176C24.762 9.359 25.078 9.819 24.914 10.752C24.848 11.13 24.604 11.363 24.216 11.426C23.9847 11.4586 23.7515 11.4753 23.518 11.476C20.345 11.483 17.165 11.489 13.992 11.502C13.512 11.502 13.037 11.546 12.57 11.622C10.996 11.868 10.404 12.492 10.272 14.01C10.212 14.723 10.212 14.723 10.957 14.723H23.985C24.19 14.729 24.387 14.767 24.558 14.873C25.138 15.227 24.993 15.781 24.96 16.292C24.934 16.702 24.677 16.928 24.236 17.01C24.0507 17.0384 23.8634 17.0511 23.676 17.048H10.686C10.206 17.048 10.213 17.048 10.252 17.502C10.285 17.918 10.312 18.328 10.417 18.731C10.614 19.481 11.095 19.947 11.872 20.155C12.734 20.388 13.623 20.439 14.512 20.445C17.612 20.464 20.707 20.458 23.808 20.458C24.203 20.458 24.571 20.508 24.802 20.855C25.25 21.523 24.901 22.455 24.117 22.695C23.446 22.903 22.741 22.953 22.043 22.96C19.133 23.01 16.223 23.017 13.313 22.96C12.4156 22.9369 11.5217 22.8379 10.641 22.664C8.567 22.254 7.533 21.246 7.184 19.254C7.105 18.794 7.059 18.328 7 17.867V14.231C7.04 13.871 7.072 13.513 7.119 13.16C7.395 10.903 8.449 9.794 10.766 9.303C11.589 9.126 12.431 9.088 13.261 9.006C16.27 9 19.29 9 22.313 9Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_112">
+												<rect width="32" height="32" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<span>Enjin Coin</span>
+							</td>
+							<td>
+								<span>$0.6129</span>
+								<span class="aud">AUD</span>
+							</td>
+							<td>
+								<span class="up">16.41%</span>
+								<div>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_1_74)">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M14.7204 14.3486C15.3659 14.3532 15.8949 13.8336 15.9019 13.1882L15.9999 1.17708C16.0034 0.863459 15.8806 0.562103 15.6593 0.340756C15.4379 0.119408 15.1366 -0.00335317 14.8229 6.97059e-05L2.83287 0.0980504C2.18738 0.105095 1.66783 0.634058 1.67242 1.27952C1.677 1.92498 2.20399 2.44252 2.84947 2.43548L11.9815 2.36869L0.343905 14.0064C-0.113402 14.4637 -0.114812 15.2037 0.340755 15.6593C0.796322 16.1148 1.53635 16.1135 1.99366 15.6561L13.6313 4.01844L13.5645 13.1716C13.5574 13.8171 14.075 14.344 14.7204 14.3486Z"
+												fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_74">
+												<rect width="16" height="16" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</td>
+							<td>
+								<span>$629M</span>
+							</td>
+							<td>
+								<a href="#">Buy</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="markets__view__all">
+
+					<svg width="79" height="26" viewBox="0 0 79 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1253_2)">
+							<path
+								d="M12 25C18.6274 25 24 19.6274 24 13C24 6.37258 18.6274 1 12 1C5.37258 1 0 6.37258 0 13C0 19.6274 5.37258 25 12 25Z"
+								fill="#F7931A" />
+							<path
+								d="M17.3917 11.515C17.6272 9.943 16.4295 9.09775 14.793 8.53375L15.324 6.40375L14.028 6.08125L13.5105 8.155C13.17 8.0695 12.8205 7.99 12.4717 7.9105L12.993 5.82325L11.697 5.5L11.166 7.62925C10.884 7.56475 10.6065 7.50175 10.338 7.43425L10.3395 7.4275L8.55149 6.98125L8.20649 8.36575C8.20649 8.36575 9.16874 8.58625 9.14849 8.59975C9.67349 8.731 9.76799 9.07825 9.75224 9.35425L9.14774 11.7805C9.18374 11.7895 9.23024 11.803 9.28274 11.8232L9.14549 11.7895L8.29799 15.1885C8.23349 15.3475 8.07074 15.5867 7.70324 15.496C7.71674 15.5147 6.76124 15.2612 6.76124 15.2612L6.11774 16.7448L7.80524 17.1655C8.11874 17.2443 8.42624 17.3267 8.72849 17.404L8.19224 19.558L9.48749 19.8805L10.0185 17.7505C10.3725 17.8457 10.716 17.9342 11.052 18.0182L10.5225 20.1392L11.8185 20.4618L12.3547 18.3123C14.5657 18.7308 16.2277 18.562 16.9275 16.5625C17.4915 14.953 16.8997 14.0238 15.7365 13.4185C16.584 13.2235 17.2215 12.6663 17.3917 11.515ZM14.4292 15.6685C14.0295 17.2788 11.3182 16.408 10.4392 16.1898L11.1517 13.336C12.0307 13.5557 14.8485 13.99 14.4292 15.6685ZM14.8305 11.4918C14.4652 12.9565 12.2092 12.2118 11.478 12.0295L12.123 9.442C12.8542 9.62425 15.2115 9.964 14.8305 11.4918Z"
+								fill="white" />
+						</g>
+						<rect x="17.5" y="0.5" width="25" height="25" stroke="white" />
+						<g clip-path="url(#clip1_1253_2)">
+							<path
+								d="M30 25C36.6274 25 42 19.6274 42 13C42 6.37258 36.6274 1 30 1C23.3726 1 18 6.37258 18 13C18 19.6274 23.3726 25 30 25Z"
+								fill="#627EEA" />
+							<path d="M30.3735 4V10.6525L35.9963 13.165L30.3735 4Z" fill="white" fill-opacity="0.602" />
+							<path d="M30.3735 4L24.75 13.165L30.3735 10.6525V4Z" fill="white" />
+							<path d="M30.3735 17.476V21.9963L36 14.212L30.3735 17.476Z" fill="white" fill-opacity="0.602" />
+							<path d="M30.3735 21.9963V17.4753L24.75 14.212L30.3735 21.9963Z" fill="white" />
+							<path d="M30.3735 16.4298L35.9963 13.1651L30.3735 10.6541V16.4298Z" fill="white" fill-opacity="0.2" />
+							<path d="M24.75 13.1651L30.3735 16.4298V10.6541L24.75 13.1651Z" fill="white" fill-opacity="0.602" />
+						</g>
+						<rect x="35.5" y="0.5" width="25" height="25" stroke="white" />
+						<g clip-path="url(#clip2_1253_2)">
+							<path
+								d="M48 25C54.6274 25 60 19.6274 60 13C60 6.37258 54.6274 1 48 1C41.3726 1 36 6.37258 36 13C36 19.6274 41.3726 25 48 25Z"
+								fill="#26A17B" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M49.4415 14.0373V14.0358C49.359 14.0418 48.9337 14.0673 47.985 14.0673C47.2275 14.0673 46.6942 14.0448 46.5067 14.0358V14.038C43.5907 13.9098 41.4142 13.402 41.4142 12.7945C41.4142 12.1878 43.5907 11.68 46.5067 11.5495V13.5325C46.6972 13.546 47.2432 13.5783 47.9977 13.5783C48.903 13.5783 49.3567 13.5408 49.4415 13.5333V11.551C52.3515 11.6808 54.5227 12.1885 54.5227 12.7945C54.5227 13.402 52.3515 13.9083 49.4415 14.0373ZM49.4415 11.3448V9.57026H53.502V6.86426H42.4462V9.57026H46.5067V11.344C43.2067 11.4955 40.725 12.1495 40.725 12.9325C40.725 13.7155 43.2067 14.3688 46.5067 14.521V20.2075H49.4415V14.5195C52.7362 14.368 55.212 13.7148 55.212 12.9325C55.212 12.1503 52.7362 11.497 49.4415 11.3448Z"
+								fill="white" />
+						</g>
+						<rect x="53.5" y="0.5" width="25" height="25" stroke="white" />
+						<g clip-path="url(#clip3_1253_2)">
+							<path
+								d="M66 25C72.6274 25 78 19.6274 78 13C78 6.37258 72.6274 1 66 1C59.3726 1 54 6.37258 54 13C54 19.6274 59.3726 25 66 25Z"
+								fill="#23292F" />
+							<path
+								d="M71.3025 7H73.47L68.9587 11.4677C68.17 12.2448 67.1072 12.6804 66 12.6804C64.8928 12.6804 63.83 12.2448 63.0413 11.4677L58.5262 7H60.6975L64.125 10.3922C64.6241 10.8849 65.2972 11.1611 65.9985 11.1611C66.6998 11.1611 67.3729 10.8849 67.872 10.3922L71.3025 7ZM60.6713 19.4222H58.5L63.0413 14.9275C63.83 14.1504 64.8928 13.7148 66 13.7148C67.1072 13.7148 68.17 14.1504 68.9587 14.9275L73.5 19.4215H71.3287L67.875 16C67.3759 15.5074 66.7028 15.2311 66.0015 15.2311C65.3002 15.2311 64.6271 15.5074 64.128 16L60.6705 19.4222H60.6713Z"
+								fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1253_2">
+								<rect width="24" height="24" fill="white" transform="translate(0 1)" />
+							</clipPath>
+							<clipPath id="clip1_1253_2">
+								<rect width="24" height="24" fill="white" transform="translate(18 1)" />
+							</clipPath>
+							<clipPath id="clip2_1253_2">
+								<rect width="24" height="24" fill="white" transform="translate(36 1)" />
+							</clipPath>
+							<clipPath id="clip3_1253_2">
+								<rect width="24" height="24" fill="white" transform="translate(54 1)" />
+							</clipPath>
+						</defs>
+					</svg>
+					<a href="#">View all markets</a>
+					<svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_145)">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M13.1956 11.7007C13.5826 12.0947 14.2158 12.1004 14.6098 11.7134L19.7007 6.71345C19.8922 6.52542 20 6.26834 20 6C20 5.73166 19.8922 5.47458 19.7007 5.28655L14.6098 0.286553C14.2158 -0.100439 13.5826 -0.0947347 13.1956 0.299293C12.8086 0.693319 12.8144 1.32646 13.2084 1.71345L16.5547 5H1C0.447715 5 0 5.44771 0 6C0 6.55228 0.447715 7 1 7H16.5547L13.2084 10.2866C12.8144 10.6735 12.8086 11.3067 13.1956 11.7007Z"
+								fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_145">
+								<rect width="20" height="12" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+			</div>
+			<div class="why__btc__markets">
+				<h2>Why BTC Markets?</h2>
+				<div class="wbm__items">
+
+					<div class="wbm__item">
+						<div class="wbm__icon">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M13.3334 10.0016C13.3334 6.31973 16.3182 3.33496 20.0001 3.33496C23.682 3.33496 26.6668 6.31973 26.6668 10.0016V18.335H23.3334V10.0016C23.3334 8.16068 21.8411 6.66829 20.0001 6.66829C18.1592 6.66829 16.6668 8.16068 16.6668 10.0016V18.335H13.3334V10.0016Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M16.2645 15H23.7355C25.0771 15 26.1844 15 27.0864 15.0737C28.0232 15.1502 28.8844 15.3145 29.6933 15.7266C30.9477 16.3658 31.9675 17.3857 32.6067 18.6401C33.0189 19.449 33.1831 20.3101 33.2597 21.247C33.3334 22.149 33.3333 23.2562 33.3333 24.5979V27.0688C33.3333 28.4104 33.3334 29.5177 33.2597 30.4197C33.1831 31.3565 33.0189 32.2177 32.6067 33.0266C31.9675 34.281 30.9477 35.3009 29.6933 35.94C28.8844 36.3522 28.0232 36.5165 27.0864 36.593C26.1844 36.6667 25.0771 36.6667 23.7355 36.6667H16.2645C14.9229 36.6667 13.8156 36.6667 12.9136 36.593C11.9768 36.5165 11.1156 36.3522 10.3067 35.94C9.05231 35.3009 8.03244 34.281 7.39328 33.0266C6.98113 32.2177 6.81686 31.3565 6.74031 30.4197C6.66662 29.5177 6.66664 28.4105 6.66666 27.0688V24.5978C6.66664 23.2562 6.66662 22.149 6.74031 21.247C6.81686 20.3101 6.98113 19.449 7.39328 18.6401C8.03244 17.3857 9.05231 16.3658 10.3067 15.7266C11.1156 15.3145 11.9768 15.1502 12.9136 15.0737C13.8156 15 14.9229 15 16.2645 15ZM13.1851 18.3959C12.4544 18.4556 12.0807 18.5638 11.82 18.6966C11.1928 19.0162 10.6829 19.5262 10.3633 20.1534C10.2305 20.414 10.1223 20.7877 10.0626 21.5184C10.0013 22.2685 9.99999 23.239 9.99999 24.6667V27C9.99999 28.4276 10.0013 29.3981 10.0626 30.1483C10.1223 30.879 10.2305 31.2526 10.3633 31.5133C10.6829 32.1405 11.1928 32.6504 11.82 32.97C12.0807 33.1028 12.4544 33.2111 13.1851 33.2708C13.9352 33.332 14.9057 33.3333 16.3333 33.3333H23.6667C25.0943 33.3333 26.0648 33.332 26.8149 33.2708C27.5456 33.2111 27.9193 33.1028 28.18 32.97C28.8072 32.6504 29.3171 32.1405 29.6367 31.5133C29.7695 31.2526 29.8777 30.879 29.9374 30.1483C29.9987 29.3981 30 28.4276 30 27V24.6667C30 23.239 29.9987 22.2685 29.9374 21.5184C29.8777 20.7877 29.7695 20.414 29.6367 20.1534C29.3171 19.5262 28.8072 19.0162 28.18 18.6966C27.9193 18.5638 27.5456 18.4556 26.8149 18.3959C26.0648 18.3346 25.0943 18.3333 23.6667 18.3333H16.3333C14.9057 18.3333 13.9352 18.3346 13.1851 18.3959Z"
+									fill="black" />
+								<path
+									d="M18.3333 26.6667C18.3333 25.7462 19.0795 25 20 25C20.9205 25 21.6667 25.7462 21.6667 26.6667V28.3333C21.6667 29.2538 20.9205 30 20 30C19.0795 30 18.3333 29.2538 18.3333 28.3333V26.6667Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h4>Security</h4>
+						<p>Multiple layers of account security, 2FA, address whitelisting, Biometrics.</p>
+					</div>
+
+					<div class="wbm__item">
+						<div class="wbm__icon">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M20.3751 21.6666L19.5478 29.4104L28.2447 18.3333H19.6245L20.4505 10.6102L11.7711 21.6666H20.3751ZM24.3825 5.19051C24.5605 3.52586 22.448 2.66727 21.4143 3.98414L7.03286 22.3042C6.17433 23.3978 6.95346 25 8.34384 25H16.6667L15.6167 34.8285C15.4388 36.493 17.5511 37.3514 18.5848 36.0348L32.9831 17.6958C33.8417 16.6022 33.0626 15 31.6722 15H23.3333L24.3825 5.19051Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h4>Speed</h4>
+						<p>Fast trade executions with an industry leading uptime of 99.99%.</p>
+					</div>
+
+					<div class="wbm__item">
+						<div class="wbm__icon">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.262 5H23.3925C24.8955 4.99999 26.1078 4.99998 27.0945 5.0673C28.1091 5.13652 29.0062 5.28246 29.8557 5.63434C31.8976 6.48012 33.5199 8.10241 34.3657 10.1443C34.7175 10.9938 34.8635 11.8909 34.9327 12.9055C35 13.8922 35 15.1045 35 16.6075V16.7259C35 18.2288 35 19.4411 34.9327 20.4278C34.8635 21.4424 34.7175 22.3395 34.3657 23.189C33.5199 25.2309 31.8976 26.8532 29.8557 27.699C29.0062 28.0509 28.1091 28.1968 27.0945 28.266C26.1078 28.3334 24.8955 28.3333 23.3925 28.3333H19.0476C18.2816 28.3333 18.1289 28.341 18.0043 28.3661C17.714 28.4246 17.4446 28.5593 17.2236 28.7565C17.1288 28.8411 17.031 28.9586 16.5714 29.5714L16.5355 29.6193C15.526 30.9654 14.7215 32.038 14.0632 32.8136C13.4444 33.5425 12.7449 34.2757 11.9101 34.6208C9.61311 35.5703 6.96733 34.6884 5.69944 32.5505C5.23865 31.7736 5.11897 30.7674 5.06132 29.8129C4.99999 28.7976 4.99999 27.4567 5 25.7742V17.262C4.99998 15.4557 4.99997 13.9988 5.09636 12.819C5.19561 11.6042 5.4053 10.5372 5.90828 9.55008C6.70722 7.98206 7.98206 6.70722 9.55008 5.90828C10.5372 5.4053 11.6042 5.19561 12.819 5.09636C13.9988 4.99997 15.4557 4.99998 17.262 5ZM13.0904 8.41863C12.0818 8.50103 11.5023 8.65466 11.0634 8.8783C10.1226 9.35767 9.35767 10.1226 8.8783 11.0634C8.65466 11.5023 8.50103 12.0818 8.41863 13.0904C8.33463 14.1185 8.33333 15.439 8.33333 17.3333V25.7143C8.33333 27.4702 8.33408 28.7095 8.38859 29.6119C8.41556 30.0584 8.45325 30.3722 8.49756 30.5933C8.53512 30.7808 8.56786 30.851 8.56967 30.8555C8.99247 31.5625 9.86853 31.8545 10.6309 31.5426C10.6351 31.5401 10.7034 31.5036 10.8459 31.3761C11.0141 31.2258 11.2325 30.9974 11.522 30.6564C12.107 29.9672 12.8512 28.9761 13.9048 27.5714C13.9289 27.5392 13.9528 27.5073 13.9766 27.4756C14.3238 27.0119 14.6289 26.6044 15.0042 26.2694C15.667 25.678 16.4755 25.2737 17.3463 25.0984C17.8395 24.9991 18.3486 24.9995 18.9279 24.9999C18.9675 25 19.0074 25 19.0476 25H23.3333C24.9093 25 26.0078 24.9991 26.8676 24.9404C27.7124 24.8828 28.2044 24.775 28.5801 24.6194C29.8052 24.1119 30.7786 23.1386 31.2861 21.9134C31.4417 21.5378 31.5495 21.0458 31.6071 20.2009C31.6658 19.3411 31.6667 18.2426 31.6667 16.6667C31.6667 15.0907 31.6658 13.9922 31.6071 13.1324C31.5495 12.2876 31.4417 11.7956 31.2861 11.4199C30.7786 10.1948 29.8052 9.22141 28.5801 8.71394C28.2044 8.55834 27.7124 8.45055 26.8676 8.3929C26.0078 8.33424 24.9093 8.33333 23.3333 8.33333H17.3333C15.439 8.33333 14.1185 8.33463 13.0904 8.41863Z"
+									fill="black" />
+								<path
+									d="M13.3333 18.3333C14.2538 18.3333 15 17.5871 15 16.6667C15 15.7462 14.2538 15 13.3333 15C12.4128 15 11.6667 15.7462 11.6667 16.6667C11.6667 17.5871 12.4128 18.3333 13.3333 18.3333Z"
+									fill="black" />
+								<path
+									d="M21.6667 16.6667C21.6667 17.5871 20.9205 18.3333 20 18.3333C19.0795 18.3333 18.3333 17.5871 18.3333 16.6667C18.3333 15.7462 19.0795 15 20 15C20.9205 15 21.6667 15.7462 21.6667 16.6667Z"
+									fill="black" />
+								<path
+									d="M28.3333 16.6667C28.3333 17.5871 27.5871 18.3333 26.6667 18.3333C25.7462 18.3333 25 17.5871 25 16.6667C25 15.7462 25.7462 15 26.6667 15C27.5871 15 28.3333 15.7462 28.3333 16.6667Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h4>Support</h4>
+						<p>100% Australian-based customer support, OTC desk and VIP Program.</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="template__section container">
+			<div class="template__section__content">
+				<h4>trade</h4>
+				<h2>Buy, sell and trade crypto with confidence</h2>
+
+				<div class="template__section__content__items">
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M20.3885 26.2735C20.6385 26.5236 20.9777 26.6641 21.3313 26.6641C21.6849 26.6641 22.0241 26.5236 22.2741 26.2735L24.9408 23.6069C25.4615 23.0862 25.4615 22.242 24.9408 21.7213C24.4201 21.2006 23.5759 21.2006 23.0552 21.7213L22.6646 22.1118V7.73177C22.6646 6.99539 22.0677 6.39844 21.3313 6.39844C20.5949 6.39844 19.998 6.99539 19.998 7.73177V22.1118L19.6074 21.7213C19.0867 21.2006 18.2425 21.2006 17.7218 21.7213C17.2011 22.242 17.2011 23.0862 17.7218 23.6069L20.3885 26.2735Z"
+									fill="black" />
+								<path
+									d="M11.6115 6.78896C11.3615 6.53891 11.0223 6.39844 10.6687 6.39844C10.3151 6.39844 9.97594 6.53891 9.72589 6.78896L7.05923 9.45563C6.53853 9.97633 6.53853 10.8205 7.05923 11.3412C7.57992 11.8619 8.42414 11.8619 8.94484 11.3412L9.33537 10.9507V25.8651C9.33537 26.6015 9.93232 27.1984 10.6687 27.1984C11.4051 27.1984 12.002 26.6015 12.002 25.8651V10.9507L12.3926 11.3412C12.9133 11.8619 13.7575 11.8619 14.2782 11.3412C14.7989 10.8205 14.7989 9.97633 14.2782 9.45563L11.6115 6.78896Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Simple buy & sell options</h6>
+						<p>Buy and sell cryptocurrency quickly and easily.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M4 26.6668C4 25.9304 4.59695 25.3335 5.33333 25.3335H26.6667C27.403 25.3335 28 25.9304 28 26.6668C28 27.4032 27.403 28.0001 26.6667 28.0001H5.33333C4.59695 28.0001 4 27.4032 4 26.6668Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M24 4C23.2636 4 22.6667 4.59695 22.6667 5.33333V12C22.6667 12.7364 23.2636 13.3333 24 13.3333C24.7364 13.3333 25.3333 12.7364 25.3333 12V5.33333C25.3333 4.59695 24.7364 4 24 4ZM13.3333 9.33333C12.597 9.33333 12 9.93029 12 10.6667V16C12 16.7364 12.597 17.3333 13.3333 17.3333C14.0697 17.3333 14.6667 16.7364 14.6667 16V10.6667C14.6667 9.93029 14.0697 9.33333 13.3333 9.33333ZM8 17.3333C7.26362 17.3333 6.66666 17.9303 6.66666 18.6667V21.3333C6.66666 22.0697 7.26362 22.6667 8 22.6667C8.73637 22.6667 9.33333 22.0697 9.33333 21.3333V18.6667C9.33333 17.9303 8.73637 17.3333 8 17.3333ZM17.3333 10.6667C17.3333 9.93029 17.9303 9.33333 18.6667 9.33333C19.4031 9.33333 20 9.93029 20 10.6667V12C20 12.7364 19.4031 13.3333 18.6667 13.3333C17.9303 13.3333 17.3333 12.7364 17.3333 12V10.6667Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Advanced trading</h6>
+						<p>Access advanced order types including limit, market, stop limit and dollar cost averaging.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M2.87162 20.7477C2.46004 18.6785 2.67128 16.5338 3.47861 14.5848C4.28595 12.6357 5.65312 10.9698 7.40725 9.7977C8.94968 8.76708 10.7304 8.159 12.5721 8.02724C13.7745 7.94121 14.6667 8.92298 14.6667 10V17.3334H22C23.0771 17.3334 24.0588 18.2255 23.9728 19.428C23.841 21.2697 23.233 23.0504 22.2023 24.5928C21.0303 26.3469 19.3644 27.7141 17.4153 28.5214C15.4662 29.3288 13.3215 29.54 11.2524 29.1284C9.18323 28.7168 7.28262 27.7009 5.79086 26.2092C4.2991 24.7174 3.28319 22.8168 2.87162 20.7477ZM5.94229 15.6052C5.33679 17.067 5.17836 18.6756 5.48705 20.2274C5.79573 21.7793 6.55765 23.2047 7.67647 24.3236C8.79529 25.4424 10.2208 26.2043 11.7726 26.513C13.3245 26.8217 14.933 26.6632 16.3948 26.0577C17.8566 25.4522 19.106 24.4269 19.9851 23.1113C20.6148 22.1688 21.0342 21.1078 21.2214 20H14.6667C13.1939 20 12 18.8061 12 17.3334V10.7786C10.8922 10.9658 9.8312 11.3852 8.88877 12.015C7.57317 12.894 6.54779 14.1434 5.94229 15.6052Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M17.3333 4.66654C17.3333 3.58951 18.2254 2.6077 19.4279 2.69374C20.5681 2.77532 21.6895 3.03979 22.7486 3.4785C24.0428 4.01455 25.2187 4.80025 26.2091 5.79074C27.1996 6.78123 27.9853 7.95712 28.5214 9.25125C28.9601 10.3104 29.2246 11.4318 29.3061 12.572C29.3922 13.7745 28.4104 14.6666 27.3333 14.6666H20C18.5273 14.6666 17.3333 13.4727 17.3333 11.9999V4.66654ZM20 5.4451V11.9999H26.5548C26.4548 11.4084 26.2884 10.8286 26.0577 10.2718C25.6557 9.30114 25.0664 8.41923 24.3235 7.67636C23.5807 6.93349 22.6987 6.34421 21.7281 5.94217C21.1713 5.71152 20.5915 5.54509 20 5.4451Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Portfolio tracking</h6>
+						<p>Track your total asset holdings, values and equity over time.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M18.9884 2.66675H13.0116C11.9383 2.66673 11.0525 2.66672 10.3309 2.72567C9.58144 2.78691 8.8925 2.91833 8.24539 3.24805C7.24186 3.75937 6.42596 4.57527 5.91464 5.5788C5.58492 6.22591 5.4535 6.91485 5.39226 7.66431C5.33331 8.3859 5.33332 9.27171 5.33334 10.345V21.6551C5.33332 22.7284 5.33331 23.6142 5.39226 24.3358C5.4535 25.0853 5.58492 25.7742 5.91464 26.4213C6.42596 27.4249 7.24186 28.2408 8.24539 28.7521C8.8925 29.0818 9.58144 29.2132 10.3309 29.2745C11.0525 29.3334 11.9383 29.3334 13.0116 29.3334H18.9884C20.0617 29.3334 20.9475 29.3334 21.6691 29.2745C22.4186 29.2132 23.1075 29.0818 23.7546 28.7521C24.7581 28.2408 25.574 27.4249 26.0854 26.4213C26.4151 25.7742 26.5465 25.0853 26.6077 24.3358C26.6667 23.6142 26.6667 22.7285 26.6667 21.6552V10.345C26.6667 9.27172 26.6667 8.38589 26.6077 7.66431C26.5465 6.91485 26.4151 6.22591 26.0854 5.5788C25.574 4.57527 24.7581 3.75937 23.7546 3.24805C23.1075 2.91833 22.4186 2.78691 21.6691 2.72567C20.9475 2.66672 20.0617 2.66673 18.9884 2.66675ZM9.45603 5.62406C9.66457 5.51781 9.9635 5.43124 10.548 5.38348C10.9395 5.3515 11.406 5.33994 12 5.33576V6.66675C12 7.40313 12.5969 8.00008 13.3333 8.00008H18.6667C19.403 8.00008 20 7.40313 20 6.66675V5.33576C20.594 5.33994 21.0605 5.3515 21.4519 5.38348C22.0365 5.43124 22.3354 5.51781 22.544 5.62406C23.0457 5.87973 23.4537 6.28767 23.7093 6.78944C23.8156 6.99797 23.9022 7.29691 23.9499 7.88146C23.999 8.48158 24 9.25797 24 10.4001V21.6001C24 22.7422 23.999 23.5186 23.9499 24.1187C23.9022 24.7032 23.8156 25.0022 23.7093 25.2107C23.4537 25.7125 23.0457 26.1204 22.544 26.3761C22.3354 26.4823 22.0365 26.5689 21.4519 26.6167C20.8518 26.6657 20.0754 26.6667 18.9333 26.6667H13.0667C11.9246 26.6667 11.1482 26.6657 10.548 26.6167C9.9635 26.5689 9.66457 26.4823 9.45603 26.3761C8.95427 26.1204 8.54632 25.7125 8.29066 25.2107C8.1844 25.0022 8.09784 24.7032 8.05008 24.1187C8.00104 23.5186 8.00001 22.7422 8.00001 21.6001V10.4001C8.00001 9.25797 8.00104 8.48158 8.05008 7.88146C8.09784 7.29691 8.1844 6.99797 8.29066 6.78944C8.54632 6.28767 8.95427 5.87973 9.45603 5.62406Z"
+									fill="black" />
+								<path
+									d="M16 25C17.1046 25 18 24.1046 18 23C18 21.8954 17.1046 21 16 21C14.8954 21 14 21.8954 14 23C14 24.1046 14.8954 25 16 25Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Mobile app</h6>
+						<p>Monitor markets, manage your portfolio, and trade crypto on the go.</p>
+					</div>
+				</div>
+			</div>
+			<div class="template__section__cover">
+				<img src="img/trade-img.jpg" alt="trade-img">
+			</div>
+		</div>
+
+		<div class="template__section container">
+			<div class="template__section__content">
+				<h4>wallet</h4>
+				<h2>Simple and secure wallet services</h2>
+
+				<div class="template__section__content__items">
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M11.6783 4H11.7333H20.2667H20.3217C21.395 3.99998 22.2808 3.99997 23.0024 4.05893C23.7519 4.12016 24.4408 4.25158 25.0879 4.5813C26.0915 5.09262 26.9074 5.90852 27.4187 6.91205C27.7484 7.55917 27.8798 8.2481 27.9411 8.99757C28 9.71915 28 10.605 28 11.6782V11.7333V17.6V17.6551C28 18.7284 28 19.6142 27.9411 20.3358C27.8798 21.0852 27.7484 21.7742 27.4187 22.4213C26.9074 23.4248 26.0915 24.2407 25.0879 24.752C24.7385 24.9301 24.3768 25.0503 24 25.1329V26.6667C24 27.403 23.403 28 22.6667 28C21.9303 28 21.3333 27.403 21.3333 26.6667V25.3312C21.0164 25.3333 20.6795 25.3333 20.3217 25.3333H20.2667H11.7333H11.6783C11.3206 25.3333 10.9836 25.3333 10.6667 25.3312V26.6667C10.6667 27.403 10.0697 28 9.33333 28C8.59695 28 8 27.403 8 26.6667V25.1329C7.62319 25.0503 7.26152 24.9301 6.91205 24.752C5.90852 24.2407 5.09262 23.4248 4.5813 22.4213C4.25158 21.7742 4.12016 21.0852 4.05893 20.3358C3.99997 19.6142 3.99998 18.7284 4 17.6551V17.6V11.7333V11.6783C3.99998 10.605 3.99997 9.71916 4.05893 8.99757C4.12016 8.2481 4.25158 7.55917 4.5813 6.91205C5.09262 5.90852 5.90852 5.09262 6.91205 4.5813C7.55917 4.25158 8.2481 4.12016 8.99757 4.05893C9.71916 3.99997 10.605 3.99998 11.6783 4ZM9.21472 6.71674C8.63016 6.7645 8.33123 6.85106 8.12269 6.95732C7.62093 7.21298 7.21298 7.62093 6.95732 8.12269C6.85106 8.33123 6.7645 8.63016 6.71674 9.21472C6.6677 9.81484 6.66667 10.5912 6.66667 11.7333V17.6C6.66667 18.7421 6.6677 19.5185 6.71674 20.1186C6.7645 20.7032 6.85106 21.0021 6.95732 21.2106C7.21298 21.7124 7.62093 22.1204 8.12269 22.376C8.33123 22.4823 8.63016 22.5688 9.21472 22.6166C9.81484 22.6656 10.5912 22.6667 11.7333 22.6667H20.2667C21.4088 22.6667 22.1852 22.6656 22.7853 22.6166C23.3698 22.5688 23.6688 22.4823 23.8773 22.376C24.3791 22.1204 24.787 21.7124 25.0427 21.2106C25.1489 21.0021 25.2355 20.7032 25.2833 20.1186C25.3323 19.5185 25.3333 18.7421 25.3333 17.6V11.7333C25.3333 10.5912 25.3323 9.81484 25.2833 9.21472C25.2355 8.63016 25.1489 8.33123 25.0427 8.12269C24.787 7.62093 24.3791 7.21298 23.8773 6.95732C23.6688 6.85106 23.3698 6.7645 22.7853 6.71674C22.1852 6.6677 21.4088 6.66667 20.2667 6.66667H11.7333C10.5912 6.66667 9.81484 6.6677 9.21472 6.71674Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M14.6667 10.6666C14.6667 9.93021 15.2636 9.33325 16 9.33325C16.7364 9.33325 17.3333 9.93021 17.3333 10.6666V10.8942C18.4699 11.2959 19.3707 12.1967 19.7724 13.3333H20C20.7364 13.3333 21.3333 13.9302 21.3333 14.6666C21.3333 15.403 20.7364 15.9999 20 15.9999H19.7724C19.3707 17.1365 18.4699 18.0373 17.3333 18.439V18.6666C17.3333 19.403 16.7364 19.9999 16 19.9999C15.2636 19.9999 14.6667 19.403 14.6667 18.6666V18.439C13.5301 18.0373 12.6293 17.1365 12.2276 15.9999H12C11.2636 15.9999 10.6667 15.403 10.6667 14.6666C10.6667 13.9302 11.2636 13.3333 12 13.3333H12.2276C12.6293 12.1967 13.5301 11.2959 14.6667 10.8942V10.6666ZM14.6667 14.6666C14.6667 15.403 15.2636 15.9999 16 15.9999C16.7364 15.9999 17.3333 15.403 17.3333 14.6666C17.3333 13.9302 16.7364 13.3333 16 13.3333C15.2636 13.3333 14.6667 13.9302 14.6667 14.6666Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Secure asset storage</h6>
+						<p>Buy and sell cryptocurrency quickly and easily.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M16 5.33341C10.8453 5.33341 6.66667 9.51209 6.66667 14.6667C6.66667 17.6082 8.4481 20.3574 10.9399 22.5169L15.5285 26.4937C15.7991 26.7282 16.2009 26.7282 16.4716 26.4937L21.0601 22.5169C23.5519 20.3573 25.3333 17.6082 25.3333 14.6667C25.3333 9.51209 21.1547 5.33341 16 5.33341ZM4 14.6667C4 8.03933 9.37258 2.66675 16 2.66675C22.6274 2.66675 28 8.03933 28 14.6667C28 18.7019 25.587 22.1224 22.8066 24.5321L18.218 28.5088C16.9451 29.612 15.0549 29.612 13.782 28.5088L9.19341 24.5321C6.41302 22.1224 4 18.7019 4 14.6667Z"
+									fill="black" />
+								<path
+									d="M18.6667 14.6667C18.6667 16.1394 17.4728 17.3333 16 17.3333C14.5273 17.3333 13.3333 16.1394 13.3333 14.6667C13.3333 13.1939 14.5273 12 16 12C17.4728 12 18.6667 13.1939 18.6667 14.6667Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Assets held in Australia</h6>
+						<p>100% Australian-based custody of your assets.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M22.6667 12H29.3333V20H22.6667C20.4575 20 18.6667 18.2091 18.6667 16C18.6667 13.7909 20.4575 12 22.6667 12ZM22.6667 17.3333C23.403 17.3333 24 16.7364 24 16C24 15.2636 23.403 14.6667 22.6667 14.6667C21.9303 14.6667 21.3333 15.2636 21.3333 16C21.3333 16.7364 21.9303 17.3333 22.6667 17.3333Z"
+									fill="black" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M10.3449 5.33325H21.6551C22.7284 5.33324 23.6142 5.33322 24.3358 5.39218C25.0852 5.45341 25.7742 5.58483 26.4213 5.91455C27.4248 6.42588 28.2407 7.24177 28.752 8.24531C29.0818 8.89242 29.2132 9.58136 29.2744 10.3308C29.3334 11.0524 29.3333 11.9382 29.3333 13.0115V18.9884C29.3333 20.0617 29.3334 20.9475 29.2744 21.669C29.2132 22.4185 29.0818 23.1074 28.752 23.7546C28.2407 24.7581 27.4248 25.574 26.4213 26.0853C25.7742 26.415 25.0852 26.5465 24.3358 26.6077C23.6142 26.6666 22.7283 26.6666 21.655 26.6666H10.345C9.27169 26.6666 8.38586 26.6666 7.66426 26.6077C6.9148 26.5465 6.22586 26.415 5.57875 26.0853C4.57521 25.574 3.75932 24.7581 3.24799 23.7546C2.91827 23.1074 2.78685 22.4185 2.72562 21.669C2.66666 20.9474 2.66668 20.0616 2.66669 18.9883V13.0115C2.66668 11.9382 2.66666 11.0524 2.72562 10.3308C2.78685 9.58136 2.91827 8.89242 3.24799 8.24531C3.75932 7.24177 4.57521 6.42588 5.57875 5.91455C6.22586 5.58483 6.9148 5.45341 7.66426 5.39218C8.38585 5.33322 9.27167 5.33324 10.3449 5.33325ZM7.88141 8.04999C7.29686 8.09775 6.99792 8.18432 6.78939 8.29057C6.28762 8.54623 5.87967 8.95418 5.62401 9.45595C5.51776 9.66448 5.43119 9.96342 5.38343 10.548C5.3344 11.1481 5.33336 11.9245 5.33336 13.0666V18.9333C5.33336 20.0754 5.3344 20.8518 5.38343 21.4519C5.43119 22.0364 5.51776 22.3354 5.62401 22.5439C5.87967 23.0457 6.28762 23.4536 6.78939 23.7093C6.99792 23.8155 7.29686 23.9021 7.88141 23.9499C8.48153 23.9989 9.25792 23.9999 10.4 23.9999H21.6C22.7421 23.9999 23.5185 23.9989 24.1186 23.9499C24.7032 23.9021 25.0021 23.8155 25.2106 23.7093C25.7124 23.4536 26.1204 23.0457 26.376 22.5439C26.4823 22.3354 26.5688 22.0364 26.6166 21.4519C26.6656 20.8518 26.6667 20.0754 26.6667 18.9333V13.0666C26.6667 11.9245 26.6656 11.1481 26.6166 10.548C26.5688 9.96342 26.4823 9.66448 26.376 9.45595C26.1204 8.95418 25.7124 8.54623 25.2106 8.29057C25.0021 8.18432 24.7032 8.09775 24.1186 8.04999C23.5185 8.00096 22.7421 7.99992 21.6 7.99992H10.4C9.25792 7.99992 8.48153 8.00096 7.88141 8.04999Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Multi-coin wallet</h6>
+						<p>Store multiple assets simultaneously in one wallet.</p>
+					</div>
+					<div class="template__section__content__item">
+						<div class="icon">
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M4 20.3216V15.9999C4 15.2635 4.59695 14.6665 5.33333 14.6665C6.06971 14.6665 6.66667 15.2635 6.66667 15.9999V20.2665C6.66667 21.4086 6.6677 22.185 6.71674 22.7851C6.7645 23.3697 6.85106 23.6686 6.95732 23.8772C7.21298 24.3789 7.62093 24.7869 8.12269 25.0425C8.33123 25.1488 8.63016 25.2354 9.21472 25.2831C9.81484 25.3322 10.5912 25.3332 11.7333 25.3332H20.2667C21.4088 25.3332 22.1852 25.3322 22.7853 25.2831C23.3698 25.2354 23.6688 25.1488 23.8773 25.0425C24.3791 24.7869 24.787 24.3789 25.0427 23.8772C25.1489 23.6686 25.2355 23.3697 25.2833 22.7851C25.3323 22.185 25.3333 21.4086 25.3333 20.2665V15.9999C25.3333 15.2635 25.9303 14.6665 26.6667 14.6665C27.403 14.6665 28 15.2635 28 15.9999V20.3214C28 21.3948 28 22.2807 27.9411 23.0023C27.8798 23.7518 27.7484 24.4407 27.4187 25.0878C26.9074 26.0913 26.0915 26.9072 25.088 27.4186C24.4408 27.7483 23.7519 27.8797 23.0024 27.9409C22.2808 27.9999 21.395 27.9999 20.3217 27.9999H11.6783C10.605 27.9999 9.71916 27.9999 8.99757 27.9409C8.2481 27.8797 7.55917 27.7483 6.91205 27.4186C5.90852 26.9072 5.09262 26.0913 4.5813 25.0878C4.25158 24.4407 4.12016 23.7518 4.05893 23.0023C3.99997 22.2807 3.99998 21.3949 4 20.3216Z"
+									fill="black" />
+								<path
+									d="M11.0572 16.9428C10.5365 16.4221 10.5365 15.5779 11.0572 15.0572C11.5779 14.5365 12.4221 14.5365 12.9428 15.0572L14.6667 16.781V5.33333C14.6667 4.59695 15.2636 4 16 4C16.7364 4 17.3333 4.59695 17.3333 5.33333V16.781L19.0572 15.0572C19.5779 14.5365 20.4221 14.5365 20.9428 15.0572C21.4635 15.5779 21.4635 16.4221 20.9428 16.9428L16.9428 20.9428C16.4221 21.4635 15.5779 21.4635 15.0572 20.9428L11.0572 16.9428Z"
+									fill="black" />
+							</svg>
+						</div>
+						<h6>Fast funding</h6>
+						<p>Credit your wallet with AUD in seconds using Osko PayID.</p>
+					</div>
+				</div>
+			</div>
+			<div class="template__section__cover">
+				<img src="img/trade-img.jpg" alt="trade-img">
+			</div>
+		</div>
+
+		<div class="vip__program__section">
+			<div class="container">
+				<div class="vip__program__section__content">
+					<h4>VIP Program</h4>
+					<h2>When you need more than <br> just a crypto exchange</h2>
+					<p>Access world-class APIs, a lower fee structure and a dedicated Account Manager.</p>
+
+					<div class="vip__program__section__items">
+						<div class="vip__program__section__item">
+							<div class="icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M12.2251 12.9999L11.7287 17.6462L16.9468 10.9999H11.7747L12.2703 6.36607L7.06265 12.9999H12.2251ZM14.6295 3.11426C14.7363 2.11547 13.4688 1.60031 12.8486 2.39044L4.21973 13.3825C3.70461 14.0386 4.17209 15 5.00632 15H10L9.37001 20.8971C9.26327 21.8958 10.5307 22.4108 11.1509 21.6208L19.7899 10.6174C20.305 9.96127 19.8376 8.99995 19.0033 8.99995H14L14.6295 3.11426Z"
+										fill="black" />
+								</svg>
+							</div>
+							<h6>API integrations</h6>
+						</div>
+						<div class="vip__program__section__item">
+							<div class="icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M14.5 5C16.9853 5 19 7.01472 19 9.5C19 11.8468 17.2028 13.775 14.9102 13.9816L15.0898 15.9735C18.4037 15.6749 21 12.8912 21 9.5C21 5.91015 18.0899 3 14.5 3C11.1088 3 8.3251 5.59626 8.02646 8.91025L10.0184 9.08975C10.225 6.79724 12.1532 5 14.5 5Z"
+										fill="black" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M9.5 10C11.9853 10 14 12.0147 14 14.5C14 16.9853 11.9853 19 9.5 19C7.01472 19 5 16.9853 5 14.5C5 12.0147 7.01472 10 9.5 10ZM16 14.5C16 10.9101 13.0899 8 9.5 8C5.91015 8 3 10.9101 3 14.5C3 18.0899 5.91015 21 9.5 21C13.0899 21 16 18.0899 16 14.5Z"
+										fill="black" />
+								</svg>
+							</div>
+							<h6>Lower fees</h6>
+						</div>
+						<div class="vip__program__section__item">
+							<div class="icon">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M8.99994 16.001C7.34308 16.001 5.99994 17.3441 5.99994 19.001C5.99994 19.5533 6.44765 20.001 6.99994 20.001H16.9999C17.5522 20.001 17.9999 19.5533 17.9999 19.001C17.9999 17.3441 16.6568 16.001 14.9999 16.001H8.99994ZM3.99994 19.001C3.99994 16.2396 6.23852 14.001 8.99994 14.001H14.9999C17.7614 14.001 19.9999 16.2396 19.9999 19.001C19.9999 20.6578 18.6568 22.001 16.9999 22.001H6.99994C5.34309 22.001 3.99994 20.6578 3.99994 19.001Z"
+										fill="black" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M11.9999 4.00098C10.3431 4.00098 8.99994 5.34412 8.99994 7.00098C8.99994 8.65783 10.3431 10.001 11.9999 10.001C13.6568 10.001 14.9999 8.65783 14.9999 7.00098C14.9999 5.34412 13.6568 4.00098 11.9999 4.00098ZM6.99994 7.00098C6.99994 4.23955 9.23852 2.00098 11.9999 2.00098C14.7614 2.00098 16.9999 4.23955 16.9999 7.00098C16.9999 9.7624 14.7614 12.001 11.9999 12.001C9.23852 12.001 6.99994 9.7624 6.99994 7.00098Z"
+										fill="black" />
+								</svg>
+							</div>
+							<h6>Dedicated Account Manager</h6>
+						</div>
+					</div>
+
+					<a href="#">Learn more</a>
+				</div>
+
+				<div class="vip__program__section__cover">
+					<img src="img/vip-img.png" alt="vip-img">
+				</div>
+			</div>
+		</div>
+		<div class="tree__easy__steps__section container">
+            <div class="tree__easy__steps">
+                <h2>Start trading in <br> 3 easy steps</h2>
+                <div class="tree__easy__steps__items">
+                    <div class="tree__easy__steps__item">
+                        <div class="icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 28C11.0147 28 9 30.0147 9 32.5C9 33.3284 9.67157 34 10.5 34H25.5C26.3284 34 27 33.3284 27 32.5C27 30.0147 24.9853 28 22.5 28H13.5ZM6 32.5C6 28.3579 9.35786 25 13.5 25H22.5C26.6421 25 30 28.3579 30 32.5C30 34.9853 27.9853 37 25.5 37H10.5C8.01472 37 6 34.9853 6 32.5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18 10C15.5147 10 13.5 12.0147 13.5 14.5C13.5 16.9853 15.5147 19 18 19C20.4853 19 22.5 16.9853 22.5 14.5C22.5 12.0147 20.4853 10 18 10ZM10.5 14.5C10.5 10.3579 13.8579 7 18 7C22.1421 7 25.5 10.3579 25.5 14.5C25.5 18.6421 22.1421 22 18 22C13.8579 22 10.5 18.6421 10.5 14.5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.1667 6.99983C27.1667 3.77817 29.7783 1.1665 33 1.1665C36.2217 1.1665 38.8333 3.77817 38.8333 6.99983C38.8333 10.2215 36.2217 12.8331 33 12.8331C29.7783 12.8331 27.1667 10.2215 27.1667 6.99983ZM35.1625 6.24564C35.3903 6.01784 35.3903 5.64849 35.1625 5.42068C34.9347 5.19288 34.5653 5.19288 34.3375 5.42068L32.4167 7.34154L31.6625 6.58735C31.4347 6.35954 31.0653 6.35954 30.8375 6.58735C30.6097 6.81516 30.6097 7.1845 30.8375 7.41231L32.0042 8.57898C32.232 8.80678 32.6013 8.80678 32.8291 8.57898L35.1625 6.24564Z" fill="black"/>
+                            </svg>                                
+                        </div>
+                        <h6>1. Create</h6>
+                        <p>Sign up and verify your free account.</p>
+                    </div>
+                    <div class="tree__easy__steps__item">
+                        <div class="icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.3334 15H36.6666V25H28.3334C25.5719 25 23.3334 22.7614 23.3334 20C23.3334 17.2386 25.5719 15 28.3334 15ZM28.3334 21.6666C29.2537 21.6666 30 20.9205 30 20C30 19.0795 29.2537 18.3334 28.3334 18.3334C27.4129 18.3334 26.6666 19.0795 26.6666 20C26.6666 20.9205 27.4129 21.6666 28.3334 21.6666Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9311 6.6665H27.0689C28.4105 6.66649 29.5177 6.66647 30.4197 6.74017C31.3565 6.8167 32.2177 6.98098 33.0266 7.39313C34.281 8.03229 35.3009 9.05215 35.94 10.3066C36.3522 11.1155 36.5165 11.9766 36.593 12.9134C36.6667 13.8154 36.6666 14.9227 36.6666 16.2643V23.7354C36.6666 25.077 36.6667 26.1843 36.593 27.0862C36.5165 28.023 36.3522 28.8842 35.94 29.6932C35.3009 30.9475 34.281 31.9674 33.0266 32.6065C32.2177 33.0187 31.3565 33.183 30.4197 33.2595C29.5177 33.3332 28.4104 33.3332 27.0687 33.3332H12.9312C11.5896 33.3332 10.4823 33.3332 9.58028 33.2595C8.64345 33.183 7.78228 33.0187 6.97339 32.6065C5.71896 31.9674 4.6991 30.9475 4.05994 29.6932C3.64779 28.8842 3.48351 28.023 3.40698 27.0862C3.33328 26.1842 3.3333 25.0769 3.33331 23.7353V16.2643C3.3333 14.9227 3.33328 13.8154 3.40698 12.9134C3.48351 11.9766 3.64779 11.1155 4.05994 10.3066C4.6991 9.05215 5.71896 8.03229 6.97339 7.39313C7.78228 6.98098 8.64345 6.8167 9.58028 6.74017C10.4823 6.66647 11.5895 6.66649 12.9311 6.6665ZM9.85171 10.0624C9.12103 10.1221 8.74735 10.2303 8.48669 10.3632C7.85948 10.6827 7.34954 11.1927 7.02996 11.8199C6.89715 12.0805 6.78894 12.4542 6.72924 13.1849C6.66795 13.935 6.66665 14.9055 6.66665 16.3332V23.6665C6.66665 25.0942 6.66795 26.0647 6.72924 26.8148C6.78894 27.5454 6.89715 27.9192 7.02996 28.1798C7.34954 28.807 7.85948 29.3169 8.48669 29.6365C8.74735 29.7693 9.12103 29.8775 9.85171 29.9373C10.6019 29.9985 11.5724 29.9998 13 29.9998H27C28.4276 29.9998 29.3981 29.9985 30.1482 29.9373C30.879 29.8775 31.2526 29.7693 31.5132 29.6365C32.1405 29.3169 32.6505 28.807 32.97 28.1798C33.1029 27.9192 33.211 27.5454 33.2707 26.8148C33.332 26.0647 33.3334 25.0942 33.3334 23.6665V16.3332C33.3334 14.9055 33.332 13.935 33.2707 13.1849C33.211 12.4542 33.1029 12.0805 32.97 11.8199C32.6505 11.1927 32.1405 10.6827 31.5132 10.3632C31.2526 10.2303 30.879 10.1221 30.1482 10.0624C29.3981 10.0011 28.4276 9.99984 27 9.99984H13C11.5724 9.99984 10.6019 10.0011 9.85171 10.0624Z" fill="black"/>
+                            </svg>                              
+                        </div>
+                        <h6>2. Deposit</h6>
+                        <p>Add AUD or crypto to your wallet using our secure methods.</p>
+                    </div>
+                    <div class="tree__easy__steps__item">
+                        <div class="icon">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 1C28.5523 1 29 1.44772 29 2V26C29 26.5523 28.5523 27 28 27C27.4477 27 27 26.5523 27 26V2C27 1.44772 27.4477 1 28 1Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M31 5V23H25V5H31Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C12.5523 11 13 11.4477 13 12V38C13 38.5523 12.5523 39 12 39C11.4477 39 11 38.5523 11 38V12C11 11.4477 11.4477 11 12 11Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 16V35H9V16H15Z" fill="black"/>
+                            </svg>                               
+                        </div>
+                        <h6>3. Trade</h6>
+                        <p>You’re all set. Buy, sell and trade crypto immediately.</p>
+                    </div>
+
+                </div>
+				<a href="#">Get started</a>
+
+				<div class="tree__easy__steps__stars">
+					<div>
+						<img src="img/google-icon.png" alt="google-icon">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/full-star.png" alt="full-star">
+					</div>
+					<div>
+						<img src="img/half-star.png" alt="half-star">
+					</div>
+					<div>
+						4.6
+					</div>
+				</div>
+            </div>
+        </div>
+		<div class="trade__on__the__go container">
+			<h2>Trade on the go</h2>
+			<p>
+				Place simple and advanced trades on the go with the BTC Markets app. You can also manage your portfolio, monitor prices, and track market movements, anywhere, anytime.
+			</p>
+			<div class="totg__store">
+				<div class="app__store">
+					<img src="./img/app-store.png" alt="app-store">
+					<div class="app__store__stars">
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/half-star.png" alt="half-star">
+						</div>
+						<div>
+							4.3
+						</div>
+					</div>
+					
+				</div>
+				<div class="google__play">
+					<img src="./img/play-market.png" alt="google-play">
+					<div class="google__play__stars">
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/full-star.png" alt="full-star">
+						</div>
+						<div>
+							<img src="img/empty-star.png" alt="empty-star">
+						</div>
+						<div>
+							3.9
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<a href="#">Learn more</a>
+		</div>	
+
+		<div class="latest__news__section container">
+			<h2>Find out the latest crypto news</h2>
+
+
+			<div class="latest__news__items">
+				<div class="latest__news__item">
+					 <div class="latest__news__item__cover">
+						<img src="./img/item-cover.jpg" alt="This Week in Crypto: 19th January 2023">
+					 </div>
+					 <div class="latest__news__item__date__status">
+						<p>Newsletter</p>
+						<p>Jan 19th 2023</p>
+					 </div>
+					 <h4>
+						<a href="#">This Week in Crypto: 19th January 2023</a>
+					 </h4>
+					 <a href="#" class="read__more">Read more</a>
+				</div>
+
+				<div class="latest__news__item">
+					<div class="latest__news__item__cover">
+					   <img src="./img/item-cover.jpg" alt="This Week in Crypto: 19th January 2023">
+					</div>
+					<div class="latest__news__item__date__status">
+					   <p>Newsletter</p>
+					   <p>Jan 12th 2023</p>
+					</div>
+					<h4>
+					   <a href="#">This Week in Crypto: 12th January 2023</a>
+					</h4>
+					<a href="#" class="read__more">Read more</a>
+			   </div>
+
+			   <div class="latest__news__item">
+				<div class="latest__news__item__cover">
+				   <img src="./img/item-cover.jpg" alt="This Week in Crypto: 19th January 2023">
+				</div>
+				<div class="latest__news__item__date__status">
+				   <p>Informational</p>
+				   <p>Dec 27th 2022</p>
+				</div>
+				<h4>
+				   <a href="#">BTC Markets Brand Refresh</a>
+				</h4>
+				<a href="#" class="read__more">Read more</a>
+		   </div>
+			</div>
+			<a href="#" class="check__out__link">Check out more of our crypto news</a>
+
+			<div class="social">
+				<a href="#">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M1.81978 11.0429C2.10828 10.5761 2.6179 10.292 3.16665 10.292C3.31283 10.292 3.487 10.2918 3.68024 10.2873C3.52388 10.0297 3.38922 9.75774 3.27705 9.47331C2.72107 8.06352 2.75891 6.46454 3.24119 4.94882C3.44551 4.30668 4.03388 3.86421 4.7075 3.84614C5.38112 3.82805 5.99237 4.23831 6.23085 4.86856C6.49704 5.57207 6.8206 5.84954 7.18739 6.01656C7.42132 6.12308 7.71439 6.2026 8.09347 6.25536C8.61812 4.44168 10.2558 3.16699 12.2708 3.16699C12.8637 3.16699 13.4269 3.30654 13.8911 3.49179C14.0805 3.56735 14.2723 3.65808 14.4578 3.76357L15.5821 3.58288C16.1451 3.49239 16.7133 3.71167 17.0696 4.15695C17.4258 4.60224 17.5153 5.20471 17.3034 5.73419L16.6218 7.43811C16.567 10.1387 15.7974 12.2702 14.3305 13.7371C12.8107 15.2569 10.7719 15.8336 8.70832 15.8336C7.36004 15.8336 5.96667 15.6111 4.7557 15.1267C3.56398 14.6499 2.38311 13.8487 1.75047 12.5835C1.50506 12.0925 1.53129 11.5097 1.81978 11.0429ZM15.0417 7.12532L15.8333 5.14615L14.074 5.42889C14.0602 5.41559 14.0459 5.40229 14.0309 5.38901C13.6636 5.06352 12.9469 4.75032 12.2708 4.75032C10.6875 4.75032 9.49999 5.93782 9.49999 7.52115V7.91699C8.92596 7.91699 8.39818 7.89387 7.91665 7.82926C7.18269 7.73078 6.55618 7.53592 6.0371 7.17965C5.4877 6.80258 5.05867 6.2447 4.74999 5.42889C4.47043 6.3075 4.38831 7.172 4.50362 7.95766C4.62296 8.7707 4.95373 9.4993 5.49592 10.0717C5.91351 10.5126 6.45654 10.8608 7.12499 11.0837C6.5657 11.4565 5.83082 11.6538 5.12708 11.7581C5.09712 11.7626 5.06721 11.7668 5.03736 11.7709C4.28014 11.8753 3.56959 11.8753 3.16665 11.8753C3.4832 12.5084 4.05289 13.015 4.7745 13.3949C5.85759 13.9652 7.28296 14.2503 8.70832 14.2503C12.2708 14.2503 15.0417 12.2711 15.0417 7.12532Z" fill="black"/>
+					</svg>
+					Twitter
+				</a>
+				<a href="#">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.2917 17.3779C10.0313 17.4038 9.76719 17.4169 9.5 17.4169C9.23281 17.4169 8.96871 17.4038 8.70833 17.3779V11.0837H7.91667C7.47944 11.0837 7.125 10.7292 7.125 10.292C7.125 9.85477 7.47944 9.50032 7.91667 9.50032H8.70833V7.91699C8.70833 6.60532 9.77165 5.54199 11.0833 5.54199H11.875C12.3122 5.54199 12.6667 5.89643 12.6667 6.33365C12.6667 6.77088 12.3122 7.12532 11.875 7.12532H11.0833C10.6461 7.12532 10.2917 7.47977 10.2917 7.91699V9.50032H11.875C12.3122 9.50032 12.6667 9.85477 12.6667 10.292C12.6667 10.7292 12.3122 11.0837 11.875 11.0837H10.2917V17.3779Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 15.8331C12.9978 15.8331 15.8333 12.9974 15.8333 9.49968C15.8333 6.00187 12.9978 3.16635 9.5 3.16635C6.0022 3.16635 3.16667 6.00187 3.16667 9.49968C3.16667 12.9974 6.0022 15.8331 9.5 15.8331ZM9.5 17.4164C13.8723 17.4164 17.4167 13.8719 17.4167 9.49968C17.4167 5.12742 13.8723 1.58301 9.5 1.58301C5.12775 1.58301 1.58334 5.12742 1.58334 9.49968C1.58334 13.8719 5.12775 17.4164 9.5 17.4164Z" fill="black"/>
+					</svg>
+					Facebook
+				</a>
+				<a href="#">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.689 17.7025H3.29242C2.18218 17.7025 1.27887 16.7992 1.27887 15.689V3.29236C1.27887 2.18212 2.18218 1.27881 3.29242 1.27881H15.689C16.7992 1.27881 17.7026 2.18212 17.7026 3.29236V15.689C17.7026 16.7992 16.7992 17.7025 15.689 17.7025ZM3.29242 2.37372C2.78584 2.37372 2.37378 2.78577 2.37378 3.29236V15.689C2.37378 16.1953 2.78584 16.6076 3.29242 16.6076H15.689C16.1954 16.6076 16.6077 16.1953 16.6077 15.689V3.29236C16.6077 2.78577 16.1954 2.37372 15.689 2.37372H3.29242Z" fill="black"/>
+						<path d="M6.97056 7.96143H5.07819V14.0455H6.97056V7.96143Z" fill="black"/>
+						<path d="M6.02435 7.12963C5.4185 7.12963 4.92853 6.63838 4.92853 6.03344C4.92853 5.42796 5.4185 4.93652 6.02435 4.93652C6.62892 4.93652 7.12018 5.42777 7.12018 6.03344C7.12018 6.63838 6.62874 7.12963 6.02435 7.12963Z" fill="black"/>
+						<path d="M14.0529 14.0447H12.1629V11.086C12.1629 10.3804 12.1506 9.47286 11.1802 9.47286C10.1962 9.47286 10.046 10.242 10.046 11.0353V14.0447H8.15601V7.96079H9.96973V8.79274H9.99546C10.2478 8.31426 10.8648 7.81006 11.7845 7.81006C13.6994 7.81006 14.0529 9.06975 14.0529 10.7079V14.0447Z" fill="black"/>
+					</svg>
+					LinkedIn	
+				</a>
+				<a href="#">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.48116 9.3156L5.3119 10.7453L6.79464 15.5139C6.88953 15.819 7.26299 15.932 7.51077 15.7293L9.64616 13.9886C9.86993 13.8061 10.1888 13.7972 10.4226 13.9669L14.2741 16.7631C14.5392 16.9557 14.9149 16.8105 14.9814 16.4901L17.8028 2.91912C17.8753 2.56911 17.5315 2.27714 17.1982 2.40608L1.47672 8.47101C1.0887 8.62053 1.09203 9.16983 1.48116 9.3156ZM6.55567 9.9843L14.0423 5.37328C14.1769 5.29068 14.3153 5.47261 14.1996 5.5798L8.02109 11.3231C7.80385 11.5252 7.66378 11.7958 7.62409 12.0896L7.41372 13.6492C7.38569 13.8575 7.09331 13.8781 7.03572 13.6766L6.22628 10.8323C6.13365 10.5079 6.26871 10.1614 6.55567 9.9843Z" fill="black"/>
+					</svg>
+					Telegram
+				</a>
+				<a href="#">
+					<svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.375 6.33333C2.375 4.1472 4.1472 2.375 6.33333 2.375H12.6667C14.8528 2.375 16.625 4.1472 16.625 6.33333V12.6667C16.625 14.8528 14.8528 16.625 12.6667 16.625H6.33333C4.1472 16.625 2.375 14.8528 2.375 12.6667V6.33333ZM6.33333 3.95833C5.02165 3.95833 3.95833 5.02165 3.95833 6.33333V12.6667C3.95833 13.9783 5.02165 15.0417 6.33333 15.0417H12.6667C13.9783 15.0417 15.0417 13.9783 15.0417 12.6667V6.33333C15.0417 5.02165 13.9783 3.95833 12.6667 3.95833H6.33333Z" fill="black"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0625 6.72885C13.4997 6.72885 13.8542 6.3744 13.8542 5.93718C13.8542 5.49995 13.4997 5.14551 13.0625 5.14551C12.6252 5.14551 12.2708 5.49995 12.2708 5.93718C12.2708 6.3744 12.6252 6.72885 13.0625 6.72885ZM7.91665 9.49968C7.91665 8.62523 8.62553 7.91635 9.49998 7.91635C10.3744 7.91635 11.0833 8.62523 11.0833 9.49968C11.0833 10.3741 10.3744 11.083 9.49998 11.083C8.62553 11.083 7.91665 10.3741 7.91665 9.49968ZM9.49998 6.33301C7.75108 6.33301 6.33331 7.75078 6.33331 9.49968C6.33331 11.2486 7.75108 12.6664 9.49998 12.6664C11.2489 12.6664 12.6667 11.2486 12.6667 9.49968C12.6667 7.75078 11.2489 6.33301 9.49998 6.33301Z" fill="black"/>
+					</svg>
+					Instagram
+				</a>
+			</div>
+		</div>
+
+		<div class="before__footer container">
+			<h2>Create an account and start trading with us today!</h2>
+			<a href="#">Get started</a>
+		</div>
+	</main>
+	<footer>
+		<div class="footer container">
+			<div class="footer__item">
+				<h4>About</h4>
+				<ul>
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Mobile app</a>
+					</li>
+					<li>
+						<a href="#">Staking</a>
+					</li>
+					<li>
+						<a href="#">Self Managed Super Funds</a>
+					</li>
+					<li>
+						<a href="#">OTC Trading</a>
+					</li>
+					<li>
+						<a href="#">VIP Program</a>
+					</li>
+					<li>
+						<a href="#">Investor Study Report</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+					<li>
+						<a href="#">Blog </a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h4>Legal</h4>
+				<ul>
+					<li>
+						<a href="#">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="#">Terms of Service</a>
+					</li>
+					<li>
+						<a href="#">AML/CTF Policy</a>
+					</li>
+					<li>
+						<a href="#">Protect Yourself Online </a>
+					</li>
+					<li>
+						<a href="#">Information Requests</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h4>Help</h4>
+				<ul>
+					<li>
+						<a href="#">Support</a>
+					</li>
+					<li>
+						<a href="#">Complaints</a>
+					</li>
+					<li>
+						<a href="#">FAQs</a>
+					</li>
+					<li>
+						<a href="#">Fees</a>
+					</li>
+					<li>
+						<a href="#">Bug Bounty</a>
+					</li>
+					<li>
+						<a href="#">API</a>
+					</li>
+					<li>
+						<a href="#">Tax Reporting</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h4>Follow</h4>
+				<ul>
+					<li>
+						<a href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.53245 9.29935C1.77539 8.90626 2.20455 8.66699 2.66665 8.66699C2.78975 8.66699 2.93642 8.66683 3.09915 8.66305C2.96748 8.44614 2.85408 8.21709 2.75962 7.97757C2.29143 6.79038 2.32329 5.44387 2.72942 4.16748C2.90148 3.62673 3.39695 3.25412 3.96421 3.2389C4.53147 3.22367 5.04621 3.56915 5.24703 4.09989C5.47119 4.69232 5.74366 4.92598 6.05254 5.06663C6.24953 5.15633 6.49633 5.22329 6.81555 5.26772C7.25736 3.74041 8.63645 2.66699 10.3333 2.66699C10.8326 2.66699 11.3069 2.7845 11.6978 2.9405C11.8573 3.00413 12.0188 3.08054 12.175 3.16937L13.1218 3.01721C13.5959 2.94101 14.0744 3.12567 14.3744 3.50064C14.6744 3.87562 14.7497 4.38296 14.5713 4.82884L13.9973 6.26372C13.9512 8.53791 13.3031 10.3328 12.0678 11.5681C10.788 12.8479 9.07111 13.3336 7.33332 13.3336C6.19793 13.3336 5.02456 13.1462 4.0048 12.7383C3.00125 12.3368 2.00683 11.6621 1.47408 10.5966C1.26742 10.1832 1.28951 9.69244 1.53245 9.29935ZM12.6667 6.00032L13.3333 4.33365L11.8518 4.57175C11.8402 4.56055 11.8281 4.54935 11.8155 4.53816C11.5062 4.26407 10.9027 4.00032 10.3333 4.00032C8.99999 4.00032 7.99999 5.00032 7.99999 6.33365V6.66699C7.5166 6.66699 7.07215 6.64752 6.66665 6.59311C6.04858 6.51018 5.52099 6.34609 5.08387 6.04607C4.62122 5.72854 4.25993 5.25874 3.99999 4.57175C3.76457 5.31163 3.69542 6.03963 3.79252 6.70124C3.89302 7.3859 4.17156 7.99946 4.62814 8.4815C4.9798 8.85277 5.43709 9.14602 5.99999 9.33366C5.52901 9.64764 4.91016 9.81374 4.31754 9.90162C4.29231 9.90536 4.26712 9.90896 4.24199 9.91242C3.60433 10.0003 3.00597 10.0003 2.66665 10.0003C2.93322 10.5334 3.41296 10.96 4.02063 11.2799C4.93271 11.7602 6.13302 12.0003 7.33332 12.0003C10.3333 12.0003 12.6667 10.3336 12.6667 6.00032Z" fill="black"/>
+							</svg>
+							Twitter	
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.66667 14.634C8.4474 14.6558 8.225 14.6669 8 14.6669C7.775 14.6669 7.5526 14.6558 7.33333 14.634V9.33366H6.66667C6.29848 9.33366 6 9.03518 6 8.66699C6 8.2988 6.29848 8.00032 6.66667 8.00032H7.33333V6.66699C7.33333 5.56242 8.22876 4.66699 9.33333 4.66699H10C10.3682 4.66699 10.6667 4.96546 10.6667 5.33365C10.6667 5.70184 10.3682 6.00032 10 6.00032H9.33333C8.96514 6.00032 8.66667 6.2988 8.66667 6.66699V8.00032H10C10.3682 8.00032 10.6667 8.2988 10.6667 8.66699C10.6667 9.03518 10.3682 9.33366 10 9.33366H8.66667V14.634Z" fill="black"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.99997 13.3331C10.9455 13.3331 13.3333 10.9452 13.3333 7.99968C13.3333 5.05416 10.9455 2.66635 7.99997 2.66635C5.05445 2.66635 2.66664 5.05416 2.66664 7.99968C2.66664 10.9452 5.05445 13.3331 7.99997 13.3331ZM7.99997 14.6664C11.6819 14.6664 14.6667 11.6816 14.6667 7.99968C14.6667 4.31778 11.6819 1.33301 7.99997 1.33301C4.31807 1.33301 1.33331 4.31778 1.33331 7.99968C1.33331 11.6816 4.31807 14.6664 7.99997 14.6664Z" fill="black"/>
+							</svg>
+							Facebook	
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.2118 14.9076H2.77252C1.83758 14.9076 1.0769 14.1469 1.0769 13.212V2.77277C1.0769 1.83783 1.83758 1.07715 2.77252 1.07715H13.2118C14.1467 1.07715 14.9074 1.83783 14.9074 2.77277V13.212C14.9074 14.1469 14.1467 14.9076 13.2118 14.9076ZM2.77252 1.99918C2.34593 1.99918 1.99893 2.34617 1.99893 2.77277V13.212C1.99893 13.6384 2.34593 13.9856 2.77252 13.9856H13.2118C13.6382 13.9856 13.9854 13.6384 13.9854 13.212V2.77277C13.9854 2.34617 13.6382 1.99918 13.2118 1.99918H2.77252Z" fill="black"/>
+								<path d="M5.86995 6.70459H4.27637V11.828H5.86995V6.70459Z" fill="black"/>
+								<path d="M5.07319 6.00406C4.563 6.00406 4.15039 5.59037 4.15039 5.08095C4.15039 4.57107 4.563 4.15723 5.07319 4.15723C5.5823 4.15723 5.99599 4.57091 5.99599 5.08095C5.99599 5.59037 5.58215 6.00406 5.07319 6.00406Z" fill="black"/>
+								<path d="M11.834 11.8273H10.2424V9.33586C10.2424 8.74161 10.2321 7.9774 9.41488 7.9774C8.58628 7.9774 8.45981 8.62513 8.45981 9.29314V11.8273H6.86823V6.70408H8.39558V7.40467H8.41723C8.62976 7.00174 9.14934 6.57715 9.92384 6.57715C11.5363 6.57715 11.834 7.63794 11.834 9.01746V11.8273Z" fill="black"/>
+							</svg>
+							LinkedIn
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.24729 7.84472L4.47318 9.04867L5.7218 13.0643C5.80171 13.3213 6.1162 13.4164 6.32486 13.2457L8.12308 11.7799C8.31152 11.6262 8.58005 11.6187 8.77694 11.7616L12.0203 14.1163C12.2435 14.2785 12.5599 14.1562 12.6159 13.8864L14.9918 2.45821C15.0529 2.16346 14.7634 1.91759 14.4827 2.02617L1.24355 7.13348C0.916801 7.25939 0.919601 7.72196 1.24729 7.84472ZM5.52056 8.40783L11.8251 4.52487C11.9384 4.45531 12.055 4.60851 11.9576 4.69878L6.7546 9.53524C6.57166 9.70542 6.45371 9.93333 6.42029 10.1807L6.24313 11.4941C6.21953 11.6695 5.97331 11.6868 5.92482 11.5171L5.24318 9.12196C5.16518 8.8488 5.27891 8.55694 5.52056 8.40783Z" fill="black"/>
+							</svg>
+							Telegram
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2 5.33333C2 3.49238 3.49238 2 5.33333 2H10.6667C12.5076 2 14 3.49238 14 5.33333V10.6667C14 12.5076 12.5076 14 10.6667 14H5.33333C3.49238 14 2 12.5076 2 10.6667V5.33333ZM5.33333 3.33333C4.22876 3.33333 3.33333 4.22876 3.33333 5.33333V10.6667C3.33333 11.7712 4.22876 12.6667 5.33333 12.6667H10.6667C11.7712 12.6667 12.6667 11.7712 12.6667 10.6667V5.33333C12.6667 4.22876 11.7712 3.33333 10.6667 3.33333H5.33333Z" fill="black"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 5.66635C11.3682 5.66635 11.6667 5.36787 11.6667 4.99968C11.6667 4.63149 11.3682 4.33301 11 4.33301C10.6318 4.33301 10.3333 4.63149 10.3333 4.99968C10.3333 5.36787 10.6318 5.66635 11 5.66635ZM6.66665 7.99968C6.66665 7.2633 7.2636 6.66635 7.99998 6.66635C8.73636 6.66635 9.33331 7.2633 9.33331 7.99968C9.33331 8.73606 8.73636 9.33301 7.99998 9.33301C7.2636 9.33301 6.66665 8.73606 6.66665 7.99968ZM7.99998 5.33301C6.52722 5.33301 5.33331 6.52692 5.33331 7.99968C5.33331 9.47244 6.52722 10.6664 7.99998 10.6664C9.47274 10.6664 10.6667 9.47244 10.6667 7.99968C10.6667 6.52692 9.47274 5.33301 7.99998 5.33301Z" fill="black"/>
+							</svg>
+							Instagram
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<h4>Get Started</h4>
+				<ul>
+					<li> 
+						<a href="#">Log in</a>
+					</li>
+					<li> 
+						<a href="#">Sign up</a>
+					</li>
+					<li>
+						<img src="./img/app-store.png" alt="app-store">
+					</li>
+					<li>
+						<img src="./img/play-market.png" alt="google-play">
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__info container">
+			<div class="footer__info__top">
+				<p>ACN 164 093 887 | ABN 45 164 093 887</p>
+				<p>&copy; 2023 BTC Markets Pty Ltd. All rights reserved.</p>
+			</div>
+			<div class="footer__info__bottom">
+				<p>BTC Markets Pty Ltd ACN 164 093 887 is an authorised representative (AR No. 1297122) of BTCM Payments Pty Ltd ACN 643 241 829 (AFSL No. 525840)</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
